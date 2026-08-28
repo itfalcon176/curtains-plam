@@ -25,7 +25,7 @@ export const NavIcon: React.FC<NavIconProps> = ({
   const IconComponent = iconLookup[name];
 
   if (!IconComponent) {
-    return <LucideIcons.Sparkles size={size} className={className} />;
+    return <LucideIcons.CircleDot size={size} className={className} />;
   }
 
   return <IconComponent size={size} className={className} />;

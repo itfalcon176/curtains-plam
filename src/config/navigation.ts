@@ -101,6 +101,7 @@ export interface NavigationConfig {
     logoText: string;
     logoSubtitle: string;
     logoImage?: string;
+    logoImageWhite?: string;
   };
   topBar: TopBarConfig;
   mainNav: NavItem[];
@@ -113,17 +114,18 @@ export const navigationConfig: NavigationConfig = {
     logoText: "EASY BLINDS & CURTAINS",
     logoSubtitle: "DUBAI • BESPOKE CURTAINS & BLINDS",
     logoImage: "/EasyBlindscurtain_logo-palm.png",
+    logoImageWhite: "/EasyBlindscurtain_logo-palm-white.png",
   },
   topBar: {
     phone: "+971 444 319 50",
     phoneRaw: "+97144431950",
     whatsapp: "+971 50 834 9761",
     whatsappRaw: "+971508349761",
-    email: "info@dubai-curtains.ae",
-    location: "Barsha Heights, Dubai, UAE",
+    email: "info@easyblindsandcurtains.ae",
+    location: "Palm Jebel Ali & Dubai, UAE",
     hours: "Mon - Sun: 9:00 AM - 9:00 PM",
     announcement: {
-      text: "Complimentary 24-Hour Home Measurement & Van Visit Across Dubai & UAE",
+      text: "Complimentary 24-Hour Home Measurement & Van Visit to Palm Jebel Ali & UAE",
       highlight: "Book Free Visit",
       href: "/book-a-free-appointment",
     },
@@ -167,7 +169,7 @@ export const navigationConfig: NavigationConfig = {
           {
             id: "shop-all-curtains",
             label: "Shop All Curtains",
-            iconName: "Sparkles",
+            iconName: "Scissors",
             description: "Explore our complete range of bespoke drapery crafted with world-class fabrics.",
             columns: [
               {
@@ -531,7 +533,7 @@ export const navigationConfig: NavigationConfig = {
                     title: "Aluminium Venetian Blinds",
                     href: "/aluminium-venetian-blinds",
                     description: "Lightweight, sleek moisture-resistant metallic slats for kitchens and bathrooms.",
-                    iconName: "Sparkles",
+                    iconName: "Shield",
                   },
                   {
                     id: "solar-screen-blinds",

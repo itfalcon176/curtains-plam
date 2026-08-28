@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { NavigationConfig } from "@/config/navigation";
 import { NavIcon } from "./NavIcon";
 import { NavBadge } from "./NavBadge";
-import { Search, X, ArrowRight, CornerDownLeft, Sparkles } from "lucide-react";
+import { Search, X, ArrowRight, CornerDownLeft, Compass } from "lucide-react";
 
 interface NavSearchModalProps {
   isOpen: boolean;
@@ -184,7 +184,7 @@ export const NavSearchModal: React.FC<NavSearchModalProps> = ({
                   >
                     <div className="flex items-center gap-3 min-w-0">
                       <div className="w-7 h-7 rounded-lg bg-stone-100 flex items-center justify-center text-stone-500 group-hover:text-[#9E7A4A] group-hover:bg-[#C5A880]/10 transition-colors shrink-0">
-                        <NavIcon name={item.iconName || "Sparkles"} size={14} />
+                        <NavIcon name={item.iconName || "Layers"} size={14} />
                       </div>
                       <div className="min-w-0">
                         <div className="text-xs font-bold text-stone-900 group-hover:text-[#9E7A4A] transition-colors truncate">
@@ -209,7 +209,7 @@ export const NavSearchModal: React.FC<NavSearchModalProps> = ({
             {/* Footer */}
             <div className="p-3 bg-[#F3EFEA]/80 border-t border-[#E6DFD5] text-[11px] text-stone-500 flex items-center justify-between">
               <div className="flex items-center gap-2">
-                <Sparkles className="w-3.5 h-3.5 text-[#C5A880]" />
+                <Compass className="w-3.5 h-3.5 text-[#C5A880]" />
                 <span>Search through all bespoke categories and services</span>
               </div>
               <kbd className="px-2 py-0.5 bg-white border border-[#E6DFD5] rounded text-[10px] text-stone-600 font-mono">
