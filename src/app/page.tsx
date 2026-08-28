@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { HeroBanner } from "@/components/home/HeroBanner";
+import { CategoryShopCards } from "@/components/home/CategoryShopCards";
+import { PalmJebelAliCurtainsOverview } from "@/components/home/PalmJebelAliCurtainsOverview";
 import { QuoteCtaBanner } from "@/components/common/QuoteCtaBanner";
 import { BookAppointmentModal } from "@/components/common/BookAppointmentModal";
 import {
@@ -145,7 +147,13 @@ export default function Home() {
       {/* 1. Immersive Full-Screen Luxury Hero Banner (Fit Screen & Priority) */}
       <HeroBanner />
 
-      {/* 3. Featured Visual Collections for Palm Jebel Ali (Rich Image Cards) */}
+      {/* 2. Shop By Category Showcase Cards (Inspired by Reference Design) */}
+      <CategoryShopCards />
+
+      {/* 3. Palm Jebel Ali Window Curtains Overview & Commercial Sectors (Section 3) */}
+      <PalmJebelAliCurtainsOverview />
+
+      {/* 4. Featured Visual Collections for Palm Jebel Ali (Rich Image Cards) */}
       <section className="py-24 max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#C5A880]/15 text-[#9E7A4A] text-xs font-bold uppercase tracking-widest">
