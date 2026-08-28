@@ -36,7 +36,7 @@ export const NavDesktop: React.FC<NavDesktopProps> = ({ items }) => {
 
   return (
     <nav
-      className="hidden lg:flex items-center gap-0.5 xl:gap-1 relative select-none"
+      className="hidden lg:flex items-center justify-center gap-0.5 xl:gap-1 2xl:gap-1.5 relative select-none"
       onMouseLeave={handleMouseLeave}
     >
       {items.map((item) => {
@@ -53,7 +53,7 @@ export const NavDesktop: React.FC<NavDesktopProps> = ({ items }) => {
             <Link
               href={item.href}
               className={cn(
-                "relative z-10 flex items-center gap-1 px-2 xl:px-2.5 py-1.5 text-[13px] font-medium tracking-normal transition-colors duration-150 rounded-full select-none whitespace-nowrap",
+                "relative z-10 flex items-center gap-1 px-2 xl:px-2.5 2xl:px-3 py-1.5 text-[12.5px] xl:text-[13px] 2xl:text-[13.5px] font-medium tracking-normal transition-colors duration-150 rounded-full select-none whitespace-nowrap",
                 isOpen || isPillHovered
                   ? "text-stone-950 font-semibold"
                   : "text-stone-700 hover:text-stone-950"
@@ -62,13 +62,13 @@ export const NavDesktop: React.FC<NavDesktopProps> = ({ items }) => {
               <span className="whitespace-nowrap">{item.title}</span>
 
               {item.badge && (
-                <NavBadge badge={item.badge} className="scale-85 -ml-0.5" />
+                <NavBadge badge={item.badge} className="scale-80 -ml-0.5" />
               )}
 
               {hasSubmenu && (
                 <ChevronDown
                   className={cn(
-                    "w-3 h-3 text-stone-500 transition-transform duration-200 shrink-0",
+                    "w-3 h-3 text-stone-400 transition-transform duration-200 shrink-0",
                     isOpen && "rotate-180 text-[#9E7A4A]"
                   )}
                 />

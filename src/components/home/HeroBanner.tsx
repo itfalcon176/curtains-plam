@@ -31,7 +31,6 @@ export const HeroBanner: React.FC = () => {
             alt="Palm Jebel Ali Luxury Curtains & Motorized Blinds"
             fill
             priority
-            quality={95}
             className="object-cover object-center scale-[1.02] transform transition-transform duration-1000 ease-out"
             sizes="100vw"
           />
