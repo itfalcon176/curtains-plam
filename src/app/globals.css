@@ -11,7 +11,8 @@
 
 @theme {
   --font-sans: var(--font-sans), system-ui, -apple-system, sans-serif;
-  --font-serif: var(--font-serif), Georgia, serif;
+  --font-serif: var(--font-baskerville), "Baskervville", Georgia, serif;
+  --font-baskerville: var(--font-baskerville), "Baskervville", Georgia, serif;
 }
 
 html {

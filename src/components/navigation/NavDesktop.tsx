@@ -12,9 +12,13 @@ import { cn } from "@/lib/utils";
 
 interface NavDesktopProps {
   items: NavItem[];
+  isTransparent?: boolean;
 }
 
-export const NavDesktop: React.FC<NavDesktopProps> = ({ items }) => {
+export const NavDesktop: React.FC<NavDesktopProps> = ({
+  items,
+  isTransparent = false,
+}) => {
   const [activeMenuId, setActiveMenuId] = useState<string | null>(null);
   const [hoveredPillId, setHoveredPillId] = useState<string | null>(null);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -54,7 +58,11 @@ export const NavDesktop: React.FC<NavDesktopProps> = ({ items }) => {
               href={item.href}
               className={cn(
                 "relative z-10 flex items-center gap-1 px-2 xl:px-2.5 2xl:px-3 py-1.5 text-[12.5px] xl:text-[13px] 2xl:text-[13.5px] font-medium tracking-normal transition-colors duration-150 rounded-full select-none whitespace-nowrap",
-                isOpen || isPillHovered
+                isTransparent
+                  ? isOpen || isPillHovered
+                    ? "text-white font-semibold"
+                    : "text-white/90 hover:text-white"
+                  : isOpen || isPillHovered
                   ? "text-stone-950 font-semibold"
                   : "text-stone-700 hover:text-stone-950"
               )}
@@ -68,8 +76,9 @@ export const NavDesktop: React.FC<NavDesktopProps> = ({ items }) => {
               {hasSubmenu && (
                 <ChevronDown
                   className={cn(
-                    "w-3 h-3 text-stone-400 transition-transform duration-200 shrink-0",
-                    isOpen && "rotate-180 text-[#9E7A4A]"
+                    "w-3 h-3 transition-transform duration-200 shrink-0",
+                    isTransparent ? "text-white/70" : "text-stone-400",
+                    isOpen && (isTransparent ? "rotate-180 text-[#C5A880]" : "rotate-180 text-[#9E7A4A]")
                   )}
                 />
               )}
@@ -78,7 +87,12 @@ export const NavDesktop: React.FC<NavDesktopProps> = ({ items }) => {
               {isPillHovered && (
                 <motion.div
                   layoutId="desktopNavPill"
-                  className="absolute inset-0 bg-[#EFEAE1]/75 rounded-full -z-10 shadow-2xs border border-[#E6DFD5]/60"
+                  className={cn(
+                    "absolute inset-0 rounded-full -z-10 shadow-2xs border",
+                    isTransparent
+                      ? "bg-white/20 border-white/25 backdrop-blur-md"
+                      : "bg-[#EFEAE1]/75 border-[#E6DFD5]/60"
+                  )}
                   transition={{ type: "spring", stiffness: 450, damping: 32 }}
                 />
               )}
@@ -89,22 +103,16 @@ export const NavDesktop: React.FC<NavDesktopProps> = ({ items }) => {
               <NavMegaMenu
                 config={item.megaMenu}
                 isOpen={isOpen}
-                onClose={() => {
-                  setActiveMenuId(null);
-                  setHoveredPillId(null);
-                }}
+                onClose={() => setActiveMenuId(null)}
               />
             )}
 
-            {/* Render Standard Nested Dropdown */}
+            {/* Render Standard Dropdown */}
             {item.type === "dropdown" && item.dropdown && (
               <NavDropdown
                 config={item.dropdown}
                 isOpen={isOpen}
-                onClose={() => {
-                  setActiveMenuId(null);
-                  setHoveredPillId(null);
-                }}
+                onClose={() => setActiveMenuId(null)}
               />
             )}
           </div>

@@ -20,52 +20,70 @@ export const Header: React.FC<HeaderProps> = ({
   className,
 }) => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState(false);
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 15) {
-        setIsScrolled(true);
-      } else {
+      const currentScrollY = window.scrollY;
+
+      // 1. Transparent at top threshold
+      if (currentScrollY <= 25) {
         setIsScrolled(false);
+        setIsVisible(true);
+      } else {
+        setIsScrolled(true);
+
+        // 2. Hide on Scroll Down, Show on Scroll Up
+        if (currentScrollY > lastScrollY && currentScrollY > 70) {
+          setIsVisible(false); // scrolling down
+        } else {
+          setIsVisible(true); // scrolling up
+        }
       }
+
+      setLastScrollY(currentScrollY);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [lastScrollY]);
+
+  const isTransparent = !isScrolled;
 
   return (
     <>
       <header
         className={cn(
-          "w-full z-40 sticky top-0 transition-all duration-300 select-none",
+          "w-full fixed top-0 left-0 right-0 z-50 transition-all duration-300 select-none",
+          isVisible ? "translate-y-0" : "-translate-y-full",
           className
         )}
       >
-        {/* Full-Width Slim Header with Larger Logo */}
+        {/* Full-Width Slim Header with Dynamic Background */}
         <div
           className={cn(
-            "w-full transition-all duration-300 border-b",
-            isScrolled
-              ? "bg-[#FAF8F5]/96 backdrop-blur-xl border-[#E6DFD5] shadow-xs py-1 sm:py-1.5"
-              : "bg-[#FAF8F5]/98 border-[#E6DFD5]/70 py-1.5 sm:py-2"
+            "w-full transition-all duration-300",
+            isTransparent
+              ? "bg-transparent border-b border-transparent py-2.5 sm:py-3.5"
+              : "bg-[#FAF8F5]/96 backdrop-blur-xl border-b border-[#E6DFD5] shadow-xs py-1.5 sm:py-2"
           )}
         >
           {/* Responsive Wide Container */}
           <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10">
             <div className="flex items-center justify-between gap-4 xl:gap-8">
-              {/* Left: Brand Logo (Enlarged & Sharp) */}
+              {/* Left: Brand Logo */}
               <div className="shrink-0">
                 <Link
                   href="/"
                   className="group flex items-center transition-opacity duration-200 hover:opacity-90 whitespace-nowrap"
                 >
-                  {config.brand.logoImage ? (
-                    <div className="relative h-10 sm:h-11.5 md:h-12.5 w-auto flex items-center">
+                  {isTransparent ? (
+                    <div className="relative h-10 sm:h-11.5 md:h-12 w-auto flex items-center">
                       <Image
-                        src={config.brand.logoImage}
+                        src={config.brand.logoImageWhite || config.brand.logoImage || "/EasyBlindscurtain_logo-palm-white.png"}
                         alt={config.brand.name}
                         width={240}
                         height={60}
@@ -74,16 +92,15 @@ export const Header: React.FC<HeaderProps> = ({
                       />
                     </div>
                   ) : (
-                    <div className="flex flex-col items-start whitespace-nowrap">
-                      <div className="flex items-center gap-1.5">
-                        <span className="font-serif font-black text-xl sm:text-2xl tracking-[0.14em] text-stone-950 uppercase">
-                          {config.brand.logoText}
-                        </span>
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#C5A880] inline-block mb-1" />
-                      </div>
-                      <span className="text-[9px] tracking-[0.2em] text-[#9E7A4A] font-bold uppercase -mt-0.5">
-                        {config.brand.logoSubtitle}
-                      </span>
+                    <div className="relative h-10 sm:h-11.5 md:h-12 w-auto flex items-center">
+                      <Image
+                        src={config.brand.logoImage || "/EasyBlindscurtain_logo-palm.png"}
+                        alt={config.brand.name}
+                        width={240}
+                        height={60}
+                        priority
+                        className="h-9 sm:h-10.5 md:h-11.5 w-auto object-contain"
+                      />
                     </div>
                   )}
                 </Link>
@@ -91,14 +108,19 @@ export const Header: React.FC<HeaderProps> = ({
 
               {/* Center: Desktop Navigation Bar */}
               <div className="hidden lg:flex items-center justify-center flex-1 min-w-0 px-2">
-                <NavDesktop items={config.mainNav} />
+                <NavDesktop items={config.mainNav} isTransparent={isTransparent} />
               </div>
 
               {/* Right: Direct Phone Button */}
               <div className="flex items-center gap-2 sm:gap-3 shrink-0 whitespace-nowrap">
                 <a
                   href={`tel:${config.topBar.phoneRaw}`}
-                  className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white border border-[#E6DFD5] text-xs font-bold text-stone-900 hover:border-[#C5A880] hover:text-[#9E7A4A] transition-all shadow-2xs whitespace-nowrap"
+                  className={cn(
+                    "flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold transition-all shadow-2xs whitespace-nowrap",
+                    isTransparent
+                      ? "bg-black/35 hover:bg-black/55 backdrop-blur-md border border-white/25 text-white hover:border-[#C5A880]"
+                      : "bg-white border border-[#E6DFD5] text-stone-900 hover:border-[#C5A880] hover:text-[#9E7A4A]"
+                  )}
                 >
                   <Phone className="w-3.5 h-3.5 text-[#C5A880] shrink-0" />
                   <span className="whitespace-nowrap">{config.topBar.phone}</span>
@@ -109,7 +131,12 @@ export const Header: React.FC<HeaderProps> = ({
                   type="button"
                   onClick={() => setIsMobileDrawerOpen(true)}
                   aria-label="Open navigation menu"
-                  className="lg:hidden p-2 rounded-xl bg-white border border-[#E6DFD5] text-stone-800 hover:text-stone-950 hover:bg-stone-50 transition-colors shadow-2xs cursor-pointer shrink-0"
+                  className={cn(
+                    "lg:hidden p-2 rounded-xl transition-colors shadow-2xs cursor-pointer shrink-0 border",
+                    isTransparent
+                      ? "bg-black/35 backdrop-blur-md border-white/25 text-white hover:bg-black/55"
+                      : "bg-white border-[#E6DFD5] text-stone-800 hover:text-stone-950 hover:bg-stone-50"
+                  )}
                 >
                   <Menu className="w-5 h-5" />
                 </button>
@@ -138,4 +165,3 @@ export const Header: React.FC<HeaderProps> = ({
     </>
   );
 };
-export default Header;

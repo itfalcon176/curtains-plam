@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Playfair_Display } from "next/font/google";
+import { Plus_Jakarta_Sans, Baskervville } from "next/font/google";
 import { Header } from "@/components/navigation";
 import { Footer } from "@/components/common/Footer";
 import "./globals.css";
@@ -10,8 +10,10 @@ const jakartaSans = Plus_Jakarta_Sans({
   display: "swap",
 });
 
-const playfairDisplay = Playfair_Display({
-  variable: "--font-serif",
+const baskervville = Baskervville({
+  weight: ["400"],
+  style: ["normal", "italic"],
+  variable: "--font-baskerville",
   subsets: ["latin"],
   display: "swap",
 });
@@ -30,7 +32,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${jakartaSans.variable} ${playfairDisplay.variable} h-full antialiased`}
+      className={`${jakartaSans.variable} ${baskervville.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[#FAF8F5] text-stone-900 font-sans selection:bg-[#C5A880]/30 selection:text-stone-950">
         <Header />

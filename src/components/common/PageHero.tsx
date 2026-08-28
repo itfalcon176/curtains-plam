@@ -31,7 +31,7 @@ export const PageHero: React.FC<PageHeroProps> = ({
   onOpenBooking,
 }) => {
   return (
-    <section className="relative w-full bg-[#141517] text-white py-16 sm:py-20 lg:py-24 overflow-hidden select-none border-b border-[#2A2B2E]">
+    <section className="relative w-full bg-[#141517] text-white pt-24 sm:pt-28 lg:pt-32 pb-16 sm:pb-20 overflow-hidden select-none border-b border-[#2A2B2E]">
       {/* Background Image / Subtle Dark Gradient */}
       {bgImage ? (
         <div
