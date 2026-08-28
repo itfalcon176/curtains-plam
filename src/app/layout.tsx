@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Baskervville } from "next/font/google";
 import { Header } from "@/components/navigation";
 import { Footer } from "@/components/common/Footer";
+import { SideContactBar } from "@/components/common/SideContactBar";
 import "./globals.css";
 
 const jakartaSans = Plus_Jakarta_Sans({
@@ -38,6 +39,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <SideContactBar />
       </body>
     </html>
   );

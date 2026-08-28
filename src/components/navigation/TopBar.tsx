@@ -2,7 +2,8 @@
 
 import React from "react";
 import { TopBarConfig } from "@/config/navigation";
-import { Phone, MapPin, Clock, ArrowRight, MessageCircle, Sparkles } from "lucide-react";
+import { Phone, MapPin, Clock, ArrowRight, Sparkles } from "lucide-react";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 
 interface TopBarProps {
   config: TopBarConfig;
@@ -32,7 +33,7 @@ export const TopBar: React.FC<TopBarProps> = ({ config, onOpenBooking }) => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-stone-300 hover:text-[#25D366] transition-colors shrink-0"
             >
-              <MessageCircle className="w-3.5 h-3.5 text-[#25D366]" />
+              <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366]" />
               <span className="hidden md:inline">WhatsApp:</span>
               <span>{config.whatsapp}</span>
             </a>

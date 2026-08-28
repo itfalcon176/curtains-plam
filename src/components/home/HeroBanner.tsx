@@ -3,7 +3,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { MessageCircle, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import { BookAppointmentModal } from "@/components/common/BookAppointmentModal";
 
 export const HeroBanner: React.FC = () => {
@@ -65,30 +66,35 @@ export const HeroBanner: React.FC = () => {
               Live amidst pristine beaches, lush landscapes, and an opulent collection of waterfront residences with bespoke curtains and automated smart blinds in Dubai.
             </motion.p>
 
-            {/* Modern Sharp Buttons (Matching jebelali-palm.com) */}
+            {/* Ultra-Modern Luxury Buttons */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               className="flex flex-wrap items-center gap-4 pt-4"
             >
-              {/* Primary Bronze Button */}
+              {/* Primary Luxury Gold & White Button with White Border & White Arrow Badge */}
               <button
                 type="button"
                 onClick={() => setIsModalOpen(true)}
-                className="px-8 py-4 bg-[#B58E52] hover:bg-[#A07B43] text-white font-sans text-xs sm:text-sm font-bold uppercase tracking-[0.18em] transition-all shadow-xl rounded-[2px] cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
+                className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-[#C5A880] hover:bg-white text-stone-950 font-sans text-xs sm:text-sm font-extrabold uppercase tracking-[0.16em] shadow-2xl shadow-[#C5A880]/30 hover:shadow-2xl hover:shadow-white/30 transition-all duration-300 transform hover:-translate-y-1 active:translate-y-0 cursor-pointer border-2 border-white"
               >
-                Book Free In-Home Measurement
+                <span>Book Free In-Home Measurement</span>
+                <span className="w-6 h-6 rounded-lg bg-white group-hover:bg-stone-950 text-stone-950 group-hover:text-white shadow-xs flex items-center justify-center transition-all group-hover:translate-x-1">
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </span>
               </button>
 
-              {/* Secondary WhatsApp Button */}
+              {/* Secondary Obsidian Frosted Glass WhatsApp Button */}
               <a
                 href="https://wa.me/971508349761?text=Hi%20Easy%20Blinds%2C%20I%20would%20like%20to%20inquire%20about%20custom%20curtains%20and%20blinds."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-7 py-4 bg-black/40 hover:bg-black/70 backdrop-blur-md border border-[#B58E52]/60 hover:border-[#25D366] text-white font-sans text-xs sm:text-sm font-bold uppercase tracking-[0.18em] transition-all rounded-[2px] flex items-center gap-2 hover:text-[#25D366] shadow-lg"
+                className="group relative inline-flex items-center gap-3 px-7 py-4 rounded-xl bg-stone-950/70 hover:bg-stone-950 backdrop-blur-xl border border-white/25 hover:border-[#25D366] text-white hover:text-white font-sans text-xs sm:text-sm font-bold uppercase tracking-[0.16em] shadow-xl hover:shadow-[#25D366]/20 transition-all duration-300 transform hover:-translate-y-1 active:translate-y-0"
               >
-                <MessageCircle className="w-4 h-4 text-[#25D366]" />
+                <span className="w-6 h-6 rounded-lg bg-[#25D366]/20 border border-[#25D366]/40 flex items-center justify-center group-hover:bg-[#25D366] group-hover:text-stone-950 text-[#25D366] transition-all">
+                  <WhatsAppIcon className="w-3.5 h-3.5" />
+                </span>
                 <span>WhatsApp Inquiry</span>
               </a>
             </motion.div>
