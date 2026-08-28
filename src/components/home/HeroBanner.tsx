@@ -70,10 +70,10 @@ export const HeroBanner: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="font-serif text-2xl sm:text-4xl lg:text-5xl font-normal text-white leading-[1.12] tracking-tight drop-shadow-md"
+              className="font-sans text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight tracking-tight drop-shadow-md"
             >
               Easy Blinds &amp; Curtains —{" "}
-              <span className="italic font-light bg-gradient-to-r from-[#E6D7C3] via-[#C5A880] to-[#EFEAE1] bg-clip-text text-transparent">
+              <span className="text-[#E6D7C3] font-bold">
                 Luxury Window Couture &amp; Smart Drapes
               </span>
             </motion.h1>
@@ -82,7 +82,7 @@ export const HeroBanner: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-xs sm:text-sm lg:text-base text-stone-200/90 font-light leading-relaxed max-w-xl drop-shadow-xs"
+              className="font-sans text-xs sm:text-sm lg:text-base text-stone-200 font-normal leading-relaxed max-w-xl drop-shadow-xs"
             >
               Easy Blinds &amp; Curtains creates custom bespoke blackout curtains, whisper-quiet Somfy motorized tracks, and designer sheer drapery delivered &amp; installed across Palm Jebel Ali &amp; Dubai within 24–48 hours.
             </motion.p>

@@ -153,11 +153,11 @@ export default function Home() {
             <span>Easy Blinds &amp; Curtains • Palm Jebel Ali Collection</span>
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-5xl text-stone-950 font-normal leading-tight">
+          <h2 className="font-sans text-3xl sm:text-4xl lg:text-5xl text-stone-950 font-extrabold leading-tight tracking-tight">
             Curated Window Couture by Easy Blinds &amp; Curtains
           </h2>
 
-          <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
+          <p className="font-sans text-stone-600 text-sm sm:text-base leading-relaxed">
             Every villa on Palm Jebel Ali features unique ceiling heights, expansive panoramic glass, and intense sun exposure. Easy Blinds &amp; Curtains designs custom window treatments tailored to master these architectural elements with effortless luxury.
           </p>
         </div>
@@ -193,7 +193,7 @@ export default function Home() {
               {/* Card Body */}
               <div className="p-8 space-y-4 flex-1 flex flex-col justify-between">
                 <div className="space-y-3">
-                  <h3 className="font-serif text-2xl sm:text-3xl font-bold text-stone-900 leading-snug">
+                  <h3 className="font-sans text-xl sm:text-2xl font-bold text-stone-900 leading-snug">
                     {item.title}
                   </h3>
                   <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
