@@ -42,7 +42,8 @@ export const NavMegaMenu: React.FC<NavMegaMenuProps> = ({
 
             {/* Layout: Tabs on Left + Content on Right */}
             {config.layout === "tabs" && config.tabs && (
-              <div className="grid grid-cols-12 min-h-[420px]">
+              <div className="grid grid-cols-12 min-h-[340px]">
+
                 {/* Left Sidebar: Tabs List */}
                 <div className="col-span-3 bg-[#F3EFEA]/80 border-r border-[#E6DFD5]/80 p-4 flex flex-col justify-between">
                   <div className="space-y-1.5">
@@ -103,7 +104,14 @@ export const NavMegaMenu: React.FC<NavMegaMenuProps> = ({
                   {currentTab && (
                     <div className="grid grid-cols-12 gap-6">
                       {/* Submenu Columns */}
-                      <div className="col-span-8 grid grid-cols-2 gap-6">
+                      <div
+                        className={cn(
+                          "grid gap-6",
+                          !currentTab.promoCard || currentTab.columns?.length === 3
+                            ? "col-span-12 grid-cols-3"
+                            : "col-span-8 grid-cols-2"
+                        )}
+                      >
                         {currentTab.columns?.map((col) => (
                           <div key={col.id} className="space-y-3">
                             <div className="flex items-center justify-between border-b border-[#E6DFD5] pb-2">
@@ -121,32 +129,29 @@ export const NavMegaMenu: React.FC<NavMegaMenuProps> = ({
                               )}
                             </div>
 
-                            <div className="space-y-1">
+                            <div className="grid grid-cols-1 gap-2">
                               {col.items.map((item) => (
                                 <Link
                                   key={item.id}
                                   href={item.href}
                                   onClick={onClose}
-                                  className="group flex items-start gap-3 p-2 rounded-lg hover:bg-stone-50/80 transition-all duration-150 border border-transparent hover:border-[#E6DFD5]/60"
+                                  className="group flex items-center justify-between p-2.5 rounded-xl bg-white/80 hover:bg-white border border-[#E6DFD5]/70 hover:border-[#C5A880]/60 hover:shadow-xs transition-all duration-150"
                                 >
-                                  <div className="w-7 h-7 rounded-md bg-[#FAF8F5] border border-[#E6DFD5] flex items-center justify-center text-stone-600 group-hover:text-[#9E7A4A] group-hover:border-[#C5A880]/40 group-hover:bg-[#C5A880]/10 transition-all duration-200 shrink-0 mt-0.5">
-                                    <NavIcon name={item.iconName} size={14} />
-                                  </div>
-                                  <div className="flex-1 min-w-0">
-                                    <div className="flex items-center gap-2 flex-wrap">
-                                      <span className="text-xs font-semibold text-stone-900 group-hover:text-[#9E7A4A] transition-colors duration-150">
-                                        {item.title}
-                                      </span>
-                                      {item.badge && (
-                                        <NavBadge badge={item.badge} />
-                                      )}
+                                  <div className="flex items-center gap-3 min-w-0">
+                                    <div className="w-8 h-8 rounded-lg bg-[#FAF8F5] border border-[#E6DFD5] flex items-center justify-center text-stone-600 group-hover:text-[#9E7A4A] group-hover:border-[#C5A880]/40 group-hover:bg-[#C5A880]/10 transition-all duration-200 shrink-0">
+                                      <NavIcon name={item.iconName} size={15} />
                                     </div>
-                                    {item.description && (
-                                      <p className="text-[11px] text-stone-500 line-clamp-1 mt-0.5 group-hover:text-stone-600">
-                                        {item.description}
-                                      </p>
-                                    )}
+                                    <span className="text-xs font-semibold text-stone-900 group-hover:text-[#9E7A4A] transition-colors duration-150 leading-snug">
+                                      {item.title}
+                                    </span>
                                   </div>
+
+
+                                  {item.badge && (
+                                    <div className="shrink-0 ml-2">
+                                      <NavBadge badge={item.badge} />
+                                    </div>
+                                  )}
                                 </Link>
                               ))}
                             </div>
@@ -154,9 +159,9 @@ export const NavMegaMenu: React.FC<NavMegaMenuProps> = ({
                         ))}
                       </div>
 
-                      {/* Right Promo Card */}
-                      <div className="col-span-4 flex flex-col">
-                        {currentTab.promoCard && (
+                      {/* Right Promo Card (Only shown if promoCard is present) */}
+                      {currentTab.promoCard && (
+                        <div className="col-span-4 flex flex-col">
                           <div className="h-full bg-gradient-to-br from-[#1C1D20] to-[#2B2C30] text-stone-100 rounded-2xl p-5 flex flex-col justify-between shadow-lg relative overflow-hidden border border-stone-800">
                             {/* Decorative Gold Glow */}
                             <div className="absolute top-0 right-0 w-36 h-36 bg-[#C5A880]/15 rounded-full blur-2xl pointer-events-none" />
@@ -189,10 +194,11 @@ export const NavMegaMenu: React.FC<NavMegaMenuProps> = ({
                               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-200" />
                             </Link>
                           </div>
-                        )}
-                      </div>
+                        </div>
+                      )}
                     </div>
                   )}
+
 
                   {/* Footer Shortcuts */}
                   {config.footerLinks && config.footerLinks.length > 0 && (
