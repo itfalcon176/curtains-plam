@@ -14,6 +14,7 @@ import {
   Percent,
 } from "lucide-react";
 import { BookAppointmentModal } from "@/components/common/BookAppointmentModal";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 
 export interface CategoryCardItem {
   id: string;
@@ -232,9 +233,10 @@ export const CategoryShopCards: React.FC = () => {
                 href="https://wa.me/971508349761?text=Hi%20Easy%20Blinds%2C%20I%20would%20like%20to%20view%20fabric%20swatches%20at%20my%20home."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 py-3.5 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/25 text-white text-xs font-bold uppercase tracking-wider rounded-xl transition-all"
+                className="px-5 py-3.5 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/25 text-white text-xs font-bold uppercase tracking-wider rounded-xl transition-all flex items-center gap-2"
               >
-                WhatsApp Us
+                <WhatsAppIcon className="w-4 h-4" />
+                <span>WhatsApp Us</span>
               </a>
             </div>
           </div>

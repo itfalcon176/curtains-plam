@@ -9,6 +9,7 @@ import { CategoryShopCards } from "@/components/home/CategoryShopCards";
 import { PalmJebelAliCurtainsOverview } from "@/components/home/PalmJebelAliCurtainsOverview";
 import { QuoteCtaBanner } from "@/components/common/QuoteCtaBanner";
 import { BookAppointmentModal } from "@/components/common/BookAppointmentModal";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import {
   Crown,
   ShieldCheck,
@@ -38,40 +39,7 @@ export default function Home() {
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
   const [selectedFabricTab, setSelectedFabricTab] = useState<"linen" | "velvet" | "blackout" | "sheer">("linen");
 
-  const palmJebelAliCollections = [
-    {
-      title: "Double-Height Wave Pleat Curtains",
-      badge: "Palm Jebel Ali Signature",
-      desc: "Graceful continuous wave ripple folds engineered for double-height ceilings and panoramic beachfront floor-to-ceiling glass.",
-      image: "/curtains-wave-palm-jebel-ali.jpg",
-      href: "/curtains",
-      features: ["Up to 8-Meter Seamless Drops", "Whisper-Quiet Somfy Tracks", "100% UV Protection"],
-    },
-    {
-      title: "Smart Motorized Blackout & Zebra Blinds",
-      badge: "App & Voice Automation",
-      desc: "Rechargeable wire-free motorized blinds that shield master bedrooms and private cinema suites from intense desert glare.",
-      image: "/blinds-motorized-palm-jebel-ali.jpg",
-      href: "/blinds",
-      features: ["Apple HomeKit & Alexa Voice", "Solar Charging Capabilities", "5-Year Motor Warranty"],
-    },
-    {
-      title: "Handcrafted 50mm Wooden Venetians",
-      badge: "Natural Basswood Luxury",
-      desc: "Sustainably harvested authentic timber slats with custom fabric tape ribbons, bringing organic warmth to luxury study rooms and suites.",
-      image: "/blinds-wooden-palm-jebel-ali.jpg",
-      href: "/wooden-venetian-blinds",
-      features: ["180° Precision Slat Tilting", "UV-Resistant Protective Seal", "Moisture Proof Options"],
-    },
-    {
-      title: "1,000+ Fabric In-Home Van Consultation",
-      badge: "Zero Obligation • 100% Free",
-      desc: "Our mobile design van brings European velvets, Belgian linens, and sheer swatches straight to your Palm Jebel Ali villa driveway.",
-      image: "/fabric-consultation-palm-jebel-ali.jpg",
-      href: "/in-home-measuring",
-      features: ["Free Laser Measurement", "On-the-Spot Instant Quote", "Touch & Feel Swatches in Daylight"],
-    },
-  ];
+
 
   const fabricData = {
     linen: {
@@ -153,93 +121,7 @@ export default function Home() {
       {/* 3. Palm Jebel Ali Window Curtains Overview & Commercial Sectors (Section 3) */}
       <PalmJebelAliCurtainsOverview />
 
-      {/* 4. Featured Visual Collections for Palm Jebel Ali (Rich Image Cards) */}
-      <section className="py-24 max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#C5A880]/15 text-[#9E7A4A] text-xs font-bold uppercase tracking-widest">
-            <Crown className="w-3.5 h-3.5" />
-            <span>Easy Blinds &amp; Curtains • Palm Jebel Ali Collection</span>
-          </div>
 
-          <h2 className="font-sans text-3xl sm:text-4xl lg:text-5xl text-stone-950 font-extrabold leading-tight tracking-tight">
-            Curated Window Couture by Easy Blinds &amp; Curtains
-          </h2>
-
-          <p className="font-sans text-stone-600 text-sm sm:text-base leading-relaxed">
-            Every villa on Palm Jebel Ali features unique ceiling heights, expansive panoramic glass, and intense sun exposure. Easy Blinds &amp; Curtains designs custom window treatments tailored to master these architectural elements with effortless luxury.
-          </p>
-        </div>
-
-        {/* 4 Rich Visual Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
-          {palmJebelAliCollections.map((item, idx) => (
-            <motion.div
-              key={idx}
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: idx * 0.1 }}
-              className="group bg-white rounded-3xl overflow-hidden border border-[#E6DFD5] shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
-            >
-              {/* Image Container with Zoom Effect */}
-              <div className="relative h-72 sm:h-80 w-full overflow-hidden bg-stone-900">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-                <div className="absolute top-4 left-4">
-                  <span className="px-3.5 py-1.5 rounded-full bg-stone-950/80 backdrop-blur-md text-[#E6D7C3] text-xs font-bold tracking-wide border border-white/20">
-                    {item.badge}
-                  </span>
-                </div>
-              </div>
-
-              {/* Card Body */}
-              <div className="p-8 space-y-4 flex-1 flex flex-col justify-between">
-                <div className="space-y-3">
-                  <h3 className="font-sans text-xl sm:text-2xl font-bold text-stone-900 leading-snug">
-                    {item.title}
-                  </h3>
-                  <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
-                    {item.desc}
-                  </p>
-
-                  <div className="pt-2 space-y-2">
-                    {item.features.map((feat, fIdx) => (
-                      <div key={fIdx} className="flex items-center gap-2 text-xs text-stone-800 font-semibold">
-                        <CheckCircle2 className="w-4 h-4 text-[#C5A880] shrink-0" />
-                        <span>{feat}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="pt-6 mt-6 border-t border-[#F0EBE1] flex items-center justify-between">
-                  <Link
-                    href={item.href}
-                    className="inline-flex items-center gap-2 text-xs font-bold text-stone-950 hover:text-[#C5A880] uppercase tracking-wider transition-colors"
-                  >
-                    <span>View Specifications</span>
-                    <ArrowRight className="w-4 h-4" />
-                  </Link>
-
-                  <button
-                    type="button"
-                    onClick={() => setIsBookingModalOpen(true)}
-                    className="px-4 py-2 rounded-full bg-stone-950 hover:bg-[#C5A880] text-white hover:text-stone-950 text-xs font-bold uppercase tracking-wider transition-all cursor-pointer"
-                  >
-                    Book Free Sample
-                  </button>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </section>
 
       {/* 4. Interactive Fabric & Texture Studio */}
       <section className="py-20 bg-[#141517] text-white border-t border-b border-[#252629]">
@@ -317,9 +199,10 @@ export default function Home() {
                   href="https://wa.me/971508349761?text=Hi%20Easy%20Blinds%2C%20please%20send%20me%20fabric%20swatch%20photos"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-3.5 bg-[#25D366] hover:bg-[#1EBE5D] text-white rounded-full text-xs font-bold uppercase tracking-wider transition-all"
+                  className="px-6 py-3.5 bg-[#25D366] hover:bg-[#1EBE5D] text-white rounded-full text-xs font-bold uppercase tracking-wider transition-all inline-flex items-center gap-2"
                 >
-                  WhatsApp Swatch Photos
+                  <WhatsAppIcon className="w-4 h-4" />
+                  <span>WhatsApp Swatch Photos</span>
                 </a>
               </div>
             </div>

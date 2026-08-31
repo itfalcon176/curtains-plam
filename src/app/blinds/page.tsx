@@ -1,155 +1,246 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { PageHero } from "@/components/common/PageHero";
-import { QuoteCtaBanner } from "@/components/common/QuoteCtaBanner";
 import {
-  SlidersHorizontal,
-  Moon,
-  Sun,
-  Cpu,
+  ChevronDown,
+  ChevronRight,
+  Home,
+  Scissors,
+  Ruler,
   Layers,
+  Wrench,
   ShieldCheck,
   CheckCircle2,
   ArrowRight,
-  TreePine,
-  Maximize2,
-  Sparkles,
+  SlidersHorizontal,
 } from "lucide-react";
+import { AppointmentBookingSection } from "@/components/common/AppointmentBookingSection";
+import { CustomerReviews } from "@/components/common/CustomerReviews";
 
 export default function BlindsPage() {
-  const blindCategories = [
+  const blindsRange = [
     {
-      title: "Roller & Solar Screen Blinds",
-      slug: "/roller-blinds",
-      badge: "Sleek Minimalist Standard",
-      description: "Clean architectural rollers with high-performance solar screen fabrics that reject 95%+ UAE heat while preserving exterior views.",
-      features: ["Solar Heat Rejection", "Smooth Chain or Motor Drive", "Zero Glare on TV & Screens", "Wipe-Clean Fabric"],
+      title: "Venetian Blinds",
+      image: "/card-wooden-blinds.jpg",
+      href: "/wooden-venetian-blinds",
+      desc: "Crafted from wood, aluminum, or fauxwood slats, these offer precise control over light and privacy with adjustable tilt.",
     },
     {
-      title: "Zebra / Day-Night Blinds",
-      slug: "/zebra-blinds",
-      badge: "Trending Dual Light Control",
-      description: "Alternating sheer and solid fabric stripes allowing you to switch seamlessly between luminous daylight diffusion and full privacy.",
-      features: ["Dual Privacy Adjustment", "Modern Horizon Aesthetic", "Enclosed Metal Cassette", "Child-Safe Cordless"],
+      title: "Roller Blinds",
+      image: "/card-roller-blinds.jpg",
+      href: "/roller-blinds",
+      desc: "Simple and sleek, roller blinds provide clean lines and are available in blackout or light-filtering fabrics.",
     },
     {
-      title: "Wooden Venetian Blinds",
-      slug: "/wooden-venetian-blinds",
-      badge: "Authentic Basswood Luxury",
-      description: "Handcrafted from sustainably harvested 50mm premium hardwoods with UV-resistant scratch coatings and custom tape ribbons.",
-      features: ["Genuine 50mm Hardwood Slats", "Rich Grain Stains & White", "Precision 180° Tilt", "Moisture Resistant Finish"],
+      title: "Roman Blinds",
+      image: "/card-wave-curtains.jpg",
+      href: "/blinds",
+      desc: "Combine the beauty of fabric drapes with the functionality of a blind; when raised, they fold into an elegant pleat.",
     },
     {
-      title: "Motorized Smart Blinds",
-      slug: "/motorised-blinds",
-      badge: "App & Voice Automation",
-      description: "Automate every blind across your villa with Somfy and Tuya rechargeable wire-free motors with solar charging capability.",
-      features: ["Somfy Wire-Free Motors", "Solar Panel Recharge Option", "Apple HomeKit & Alexa", "5-Year Guarantee"],
+      title: "Vertical Blinds",
+      image: "/card-zebra-blinds.jpg",
+      href: "/blinds",
+      desc: "Ideal for patio doors and large windows, vertical blinds are excellent for controlling light and adding height to rooms.",
     },
     {
-      title: "Vertical Louver Blinds",
-      slug: "/blinds",
-      badge: "Ideal for Large Glass Vistas",
-      description: "Rotating 180-degree fabric louvers engineered for floor-to-ceiling panoramic glass balconies and luxury office terraces.",
-      features: ["Smooth Sliding Track", "Flame Retardant Options", "Floor-to-Ceiling Drop", "Slim Stack Profile"],
+      title: "Blackout Blinds",
+      image: "/card-blackout-curtains.jpg",
+      href: "/blinds",
+      desc: "Perfect for bedrooms, media rooms, and any space where you need to eliminate natural light completely.",
     },
     {
-      title: "Duplex Cassette Shades",
-      slug: "/blinds",
-      badge: "Premium Enclosed Finish",
-      description: "Dual roller tubes inside a sleek matching powder-coated aluminium cassette for the ultimate contemporary finish.",
-      features: ["Twin Fabric Functionality", "Concealed Mechanism", "Acoustic Noise Dampening", "Architectural Grade"],
+      title: "Motorized Blinds",
+      image: "/blinds-motorized-palm-jebel-ali.jpg",
+      href: "/motorised-curtains",
+      desc: "Experience ultimate convenience with motorized blinds that can be adjusted with the simple touch of a button, perfect for hard-to-reach windows.",
+    },
+  ];
+
+  const featureServices = [
+    {
+      title: "Custom Tailoring",
+      icon: Scissors,
+    },
+    {
+      title: "Measuring & Fitting",
+      icon: Ruler,
+    },
+    {
+      title: "Curtain Alteration",
+      icon: Layers,
+    },
+    {
+      title: "Repair & Maintenance",
+      icon: Wrench,
     },
   ];
 
   return (
-    <div className="bg-[#FAF8F5]">
-      {/* 1. Page Hero */}
-      <PageHero
-        title="Custom Blinds & Motorized Shades in Dubai"
-        subtitle="Engineered for UAE Sun Protection, Privacy & Clean Modern Living"
-        badge="Easy Blinds & Curtains • Blinds Collection"
-        description="Discover custom-sized roller blinds, zebra day-night shades, handcrafted wooden venetians, and smart motorized systems tailored to exact millimeter precision in Dubai."
-        breadcrumbs={[{ label: "Blinds" }]}
-      />
+    <div className="bg-[#FAF8F5] select-none text-stone-900">
+      {/* 1. Minimal Elegant Hero Title & Intro Section */}
+      <section className="pt-24 sm:pt-28 pb-12 sm:pb-16 text-center max-w-4xl mx-auto px-4 sm:px-6">
+        {/* Breadcrumbs */}
+        <nav className="flex items-center justify-center gap-1.5 text-xs text-stone-500 mb-4 flex-wrap">
+          <Link href="/" className="hover:text-[#9E7A4A] flex items-center gap-1 transition-colors">
+            <Home className="w-3.5 h-3.5" />
+            <span>Home</span>
+          </Link>
+          <ChevronRight className="w-3 h-3 text-stone-400" />
+          <span className="text-[#9E7A4A] font-medium">Blinds</span>
+        </nav>
 
-      {/* 2. Collection Showcase Grid */}
-      <section className="py-20 max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#C5A880]/15 text-[#9E7A4A] text-xs font-bold uppercase tracking-wider">
-            <SlidersHorizontal className="w-3.5 h-3.5" />
-            <span>Complete Window Shades</span>
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="space-y-4"
+        >
+          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-stone-900 font-normal tracking-wide">
+            Blinds
+          </h1>
+
+
+          <div className="pt-1">
+            <ChevronDown className="w-5 h-5 text-stone-500 mx-auto animate-bounce" />
           </div>
-          <h2 className="font-serif text-3xl sm:text-4xl text-stone-950 font-normal">
-            Tailored Blinds for Every Room in Dubai
+
+          <div className="pt-4 space-y-3 text-xs sm:text-sm text-stone-600 leading-relaxed font-light max-w-3xl mx-auto">
+            <p>
+              At Easy Blinds &amp; Curtains, explore our extensive range of window blinds designed to fit every interior style and light control preference.
+            </p>
+            <p>
+              Enhance the functionality and style of your home with our versatile range of blinds at Easy Blinds and Curtains. Designed to meet everyday practical needs, our blinds offer effortless light control, privacy, and thermal insulation in any room. Whether for a modern living room or a serene bedroom, you'll find the perfect blinds for your style and budget.
+            </p>
+          </div>
+        </motion.div>
+      </section>
+
+      {/* 2. Discover Our Extensive Range of Blinds Grid (3 Cols x 2 Rows) */}
+      <section className="py-12 sm:py-16 max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 border-t border-[#E6DFD5]">
+        <div className="text-center max-w-2xl mx-auto mb-12">
+          <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-stone-950 font-normal tracking-wide">
+            Discover Our Extensive Range of Blinds
           </h2>
-          <p className="text-stone-600 text-sm sm:text-base">
-            Engineered with UV-reflective solar backings, child-safe cordless gear, and smart home motors to withstand Dubai’s climate.
-          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {blindCategories.map((item, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
+          {blindsRange.map((item, idx) => (
             <motion.div
-              key={index}
+              key={idx}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.08 }}
-              className="bg-white rounded-3xl p-8 border border-[#E6DFD5] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:-translate-y-1"
+              transition={{ delay: idx * 0.08 }}
+              className="group flex flex-col items-center text-center space-y-4"
             >
-              <div className="space-y-4">
-                <span className="inline-block px-3 py-1 rounded-full bg-[#EFEAE1] text-[#9E7A4A] text-[11px] font-bold tracking-wide">
-                  {item.badge}
-                </span>
+              {/* Card Image */}
+              <Link
+                href={item.href}
+                className="relative h-64 sm:h-72 w-full rounded-2xl overflow-hidden bg-stone-900 border border-[#E6DFD5] shadow-xs group-hover:shadow-xl transition-all duration-300 transform group-hover:-translate-y-1 block"
+              >
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  fill
+                  className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+              </Link>
 
-                <h3 className="font-serif text-2xl font-bold text-stone-900">
-                  {item.title}
-                </h3>
-
-                <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
-                  {item.description}
+              {/* Title & Description */}
+              <div className="space-y-2 max-w-sm px-2">
+                <Link href={item.href}>
+                  <h3 className="font-serif text-xl sm:text-2xl font-normal text-stone-950 group-hover:text-[#9E7A4A] transition-colors">
+                    {item.title}
+                  </h3>
+                </Link>
+                <p className="text-xs text-stone-600 font-normal leading-relaxed">
+                  {item.desc}
                 </p>
-
-                <div className="pt-2 space-y-2">
-                  {item.features.map((feat, idx) => (
-                    <div key={idx} className="flex items-center gap-2 text-xs text-stone-700 font-medium">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-[#C5A880] shrink-0" />
-                      <span>{feat}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="pt-8 mt-6 border-t border-[#F0EBE1] flex items-center justify-between">
-                <Link
-                  href={item.slug}
-                  className="inline-flex items-center gap-2 text-xs font-bold text-stone-950 hover:text-[#C5A880] uppercase tracking-wider transition-colors"
-                >
-                  <span>Explore Style</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </Link>
-
-                <Link
-                  href="/book-a-free-appointment"
-                  className="px-3.5 py-1.5 rounded-full bg-stone-100 hover:bg-[#C5A880] hover:text-white text-stone-700 text-[11px] font-bold transition-all"
-                >
-                  Free Sample
-                </Link>
               </div>
             </motion.div>
           ))}
         </div>
       </section>
 
-      {/* 3. Quote CTA Banner */}
-      <QuoteCtaBanner
-        title="Upgrade Your Windows with Custom Blinds"
-        subtitle="Complimentary Laser Measuring & Sample Consultation Across UAE"
+      {/* 3. Why Choose Our Blinds? Section */}
+      <section className="py-16 sm:py-20 bg-white border-t border-b border-[#E6DFD5]">
+        <div className="max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+          <div className="max-w-4xl mx-auto space-y-8">
+            <div className="text-center space-y-4">
+              <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-stone-950 font-normal">
+                Why Choose Our Blinds?
+              </h2>
+
+              <div className="space-y-3 text-xs sm:text-sm text-stone-600 text-left sm:text-center leading-relaxed">
+                <p>
+                  <strong className="text-stone-900">Customization:</strong> We tailor every blind to fit your exact window dimensions for a flawless look and maximum coverage.
+                </p>
+                <p>
+                  <strong className="text-stone-900">Quality Materials:</strong> Built to withstand daily use, our blinds are made from durable, low-maintenance materials that last.
+                </p>
+                <p>
+                  <strong className="text-stone-900">Expert Installation:</strong> Our professional team ensures your blinds are perfectly measured and installed for optimal performance and aesthetics.
+                </p>
+                <p>
+                  <strong className="text-stone-900">Energy Efficiency:</strong> Many of our blinds provide additional insulation, helping to reduce energy costs by keeping your home cooler in summer and warmer in winter.
+                </p>
+              </div>
+            </div>
+
+            {/* 4 Feature Service Icons */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-6 border-t border-[#F0EBE1]">
+              {featureServices.map((feat, i) => {
+                const IconComp = feat.icon;
+                return (
+                  <div key={i} className="flex flex-col items-center text-center space-y-3 p-4">
+                    <div className="w-16 h-16 rounded-full border border-[#C5A880]/60 bg-[#FAF8F5] text-[#9E7A4A] flex items-center justify-center shadow-2xs">
+                      <IconComp className="w-7 h-7 stroke-[1.5]" />
+                    </div>
+                    <h4 className="font-serif text-sm font-bold text-stone-900">
+                      {feat.title}
+                    </h4>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. Your Ideal Blinds Solution */}
+      <section className="py-14 max-w-4xl mx-auto px-4 text-center space-y-3">
+        <h2 className="font-serif text-2xl sm:text-3xl text-stone-950 font-normal">
+          Your Ideal Blinds Solution
+        </h2>
+        <p className="text-xs sm:text-sm text-stone-600 leading-relaxed max-w-2xl mx-auto">
+          At Easy Blinds and Curtains, we believe that choosing the right blinds should be a smooth, enjoyable process. Our team is committed to helping you find window coverings that match your taste, functional requirements, and budget—all delivered with exceptional customer service.
+        </p>
+      </section>
+
+      {/* 5. Get Started Today */}
+      <section className="pb-16 max-w-4xl mx-auto px-4 text-center space-y-3 border-b border-[#E6DFD5]">
+        <h2 className="font-serif text-2xl sm:text-3xl text-stone-950 font-normal">
+          Get Started Today
+        </h2>
+        <p className="text-xs sm:text-sm text-stone-600 leading-relaxed max-w-2xl mx-auto">
+          Explore our full range of blinds or contact us to schedule a free consultation. Our experts are ready to help you discover window blinds that align with your style and functional requirements. Call us or book a free appointment today.
+        </p>
+      </section>
+
+      {/* 6. Book a FREE Same Day Appointment Section */}
+      <AppointmentBookingSection
+        title="Book a FREE same day appointment"
+        subtitle="Our mobile design van visits your Dubai villa or residence with 1,000+ luxury fabric & blind samples & free laser measuring."
+        defaultType="Blinds"
       />
+
+      {/* 7. What our customers say (Google Reviews Rating) */}
+      <CustomerReviews />
     </div>
   );
 }

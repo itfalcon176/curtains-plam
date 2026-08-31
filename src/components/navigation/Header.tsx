@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { navigationConfig, NavigationConfig } from "@/config/navigation";
 import { NavDesktop } from "./NavDesktop";
 import { NavMobileDrawer } from "./NavMobileDrawer";
@@ -19,6 +20,7 @@ export const Header: React.FC<HeaderProps> = ({
   config = navigationConfig,
   className,
 }) => {
+  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -51,7 +53,8 @@ export const Header: React.FC<HeaderProps> = ({
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
-  const isTransparent = !isScrolled;
+  // Only homepage has a dark full-screen image hero banner at the top
+  const isTransparent = pathname === "/" && !isScrolled;
 
   return (
     <>

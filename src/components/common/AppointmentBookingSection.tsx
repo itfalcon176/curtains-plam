@@ -22,8 +22,9 @@ import {
   ArrowRight,
   Crown,
 } from "lucide-react";
-import { UaeFlag } from "./UaeFlag";
 import { navigationConfig } from "@/config/navigation";
+import { WhatsAppIcon } from "./WhatsAppIcon";
+import { UaeFlag } from "./UaeFlag";
 
 interface AppointmentBookingSectionProps {
   title?: string;
@@ -149,7 +150,7 @@ export const AppointmentBookingSection: React.FC<AppointmentBookingSectionProps>
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#25D366] hover:bg-[#1EBE5D] text-white rounded-full text-xs font-bold uppercase tracking-wider transition-all shadow-lg hover:scale-105"
                   >
-                    <MessageCircle className="w-4 h-4" />
+                    <WhatsAppIcon className="w-4 h-4" />
                     <span>Confirm via WhatsApp</span>
                   </a>
 
@@ -409,7 +410,7 @@ export const AppointmentBookingSection: React.FC<AppointmentBookingSectionProps>
                 </div>
 
                 <div className="flex items-center gap-3.5 p-3 rounded-xl bg-white/5 border border-white/10">
-                  <MessageCircle className="w-4 h-4 text-[#25D366] shrink-0" />
+                  <WhatsAppIcon className="w-4 h-4 shrink-0" />
                   <div>
                     <span className="text-[10px] text-stone-400 block uppercase">Instant WhatsApp</span>
                     <a

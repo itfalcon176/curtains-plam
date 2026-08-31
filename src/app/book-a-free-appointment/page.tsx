@@ -3,10 +3,11 @@
 import React from "react";
 import { PageHero } from "@/components/common/PageHero";
 import { AppointmentBookingSection } from "@/components/common/AppointmentBookingSection";
+import { CustomerReviews } from "@/components/common/CustomerReviews";
 
 export default function BookAppointmentPage() {
   return (
-    <div className="bg-[#FAF8F5]">
+    <div className="bg-[#FAF8F5] select-none text-stone-900">
       {/* 1. Page Hero */}
       <PageHero
         title="Book Free In-Home Consultation"
@@ -21,6 +22,10 @@ export default function BookAppointmentPage() {
         title="Book a FREE Same Day Appointment"
         subtitle="Our mobile design van visits your Palm Jebel Ali villa or Dubai home with 1,000+ fabrics & laser measuring."
       />
+
+      {/* 3. Customer Reviews */}
+      <CustomerReviews />
     </div>
   );
 }
+

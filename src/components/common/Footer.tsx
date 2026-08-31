@@ -4,12 +4,12 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { navigationConfig } from "@/config/navigation";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import {
   Phone,
   Mail,
   MapPin,
   Clock,
-  MessageCircle,
   ShieldCheck,
   Award,
   Sparkles,
@@ -54,8 +54,8 @@ export const Footer: React.FC = () => {
           </div>
 
           <div className="flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10">
-            <div className="w-12 h-12 rounded-xl bg-[#25D366]/15 text-[#25D366] flex items-center justify-center shrink-0">
-              <MessageCircle className="w-6 h-6" />
+            <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center shrink-0">
+              <WhatsAppIcon className="w-7 h-7" />
             </div>
             <div>
               <h4 className="text-white font-bold text-sm">Instant WhatsApp Support</h4>
@@ -107,7 +107,7 @@ export const Footer: React.FC = () => {
                 </a>
               </div>
               <div className="flex items-center gap-2">
-                <MessageCircle className="w-4 h-4 text-[#25D366] shrink-0" />
+                <WhatsAppIcon className="w-4 h-4 shrink-0" />
                 <a
                   href={`https://wa.me/${navigationConfig.topBar.whatsappRaw.replace("+", "")}`}
                   target="_blank"

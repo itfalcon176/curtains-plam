@@ -4,13 +4,20 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { PageHero } from "@/components/common/PageHero";
-import { QuoteCtaBanner } from "@/components/common/QuoteCtaBanner";
+import { AppointmentBookingSection } from "@/components/common/AppointmentBookingSection";
+import { CustomerReviews } from "@/components/common/CustomerReviews";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import {
   HelpCircle,
   ChevronDown,
   Sparkles,
   Phone,
-  MessageCircle,
+  Scissors,
+  Ruler,
+  Cpu,
+  ShieldCheck,
+  Plus,
+  Minus,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -24,7 +31,7 @@ export default function FaqsPage() {
     },
     {
       q: "Is the in-home measurement and mobile van consultation truly free?",
-      a: "Yes, 100% complimentary with zero obligation. Our mobile showroom van visits your villa, apartment, or office anywhere in Dubai and the UAE with over 1,000 fabric swatches and laser measurement equipment.",
+      a: "Yes, 100% complimentary with zero obligation. Our mobile showroom van visits your villa, apartment, or office anywhere in Palm Jebel Ali and Dubai with over 1,000 fabric swatches and laser measurement equipment.",
     },
     {
       q: "Are your motorized curtains and blinds compatible with smart homes?",
@@ -44,12 +51,31 @@ export default function FaqsPage() {
     },
   ];
 
+  const featureServices = [
+    {
+      title: "Custom Tailoring",
+      icon: Scissors,
+    },
+    {
+      title: "Measuring & Fitting",
+      icon: Ruler,
+    },
+    {
+      title: "Smart Motorization",
+      icon: Cpu,
+    },
+    {
+      title: "5-Year Guarantee",
+      icon: ShieldCheck,
+    },
+  ];
+
   const toggleFaq = (idx: number) => {
     setOpenIndex(openIndex === idx ? null : idx);
   };
 
   return (
-    <div className="bg-[#FAF8F5]">
+    <div className="bg-[#FAF8F5] select-none text-stone-900">
       {/* 1. Page Hero */}
       <PageHero
         title="Frequently Asked Questions"
@@ -60,7 +86,7 @@ export default function FaqsPage() {
       />
 
       {/* 2. Accordion */}
-      <section className="py-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-12 sm:py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-[#E6DFD5]">
         <div className="space-y-4">
           {faqs.map((item, idx) => {
             const isOpen = openIndex === idx;
@@ -74,15 +100,12 @@ export default function FaqsPage() {
                   onClick={() => toggleFaq(idx)}
                   className="w-full p-6 text-left flex items-center justify-between gap-4 cursor-pointer"
                 >
-                  <span className="font-serif text-lg sm:text-xl font-bold text-stone-900">
+                  <span className="font-serif text-lg sm:text-xl font-medium text-stone-950">
                     {item.q}
                   </span>
-                  <ChevronDown
-                    className={cn(
-                      "w-5 h-5 text-[#C5A880] transition-transform duration-200 shrink-0",
-                      isOpen && "rotate-180"
-                    )}
-                  />
+                  <div className="w-8 h-8 rounded-full bg-[#FAF8F5] border border-[#E6DFD5] flex items-center justify-center shrink-0 text-stone-700">
+                    {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
+                  </div>
                 </button>
 
                 <AnimatePresence>
@@ -104,35 +127,44 @@ export default function FaqsPage() {
           })}
         </div>
 
-        {/* Still Have Questions Box */}
-        <div className="mt-14 p-8 rounded-3xl bg-stone-900 text-white text-center space-y-4">
-          <h3 className="font-serif text-2xl font-normal text-[#E6D7C3]">
-            Still Have Questions?
-          </h3>
-          <p className="text-xs text-stone-400 max-w-md mx-auto">
-            Speak directly with our Dubai window treatment specialists on WhatsApp or call our showroom.
-          </p>
-          <div className="flex items-center justify-center gap-4 pt-2">
-            <a
-              href="https://wa.me/971508349761?text=Hi%20Easy%20Blinds%2C%20I%20have%20a%20question%20about%20your%20curtains"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-[#25D366] hover:bg-[#1EBE5D] text-white rounded-full text-xs font-bold uppercase tracking-wider transition-all"
-            >
-              Ask on WhatsApp
-            </a>
-            <Link
-              href="/book-a-free-appointment"
-              className="px-6 py-3 bg-[#C5A880] hover:bg-[#B4966E] text-stone-950 rounded-full text-xs font-bold uppercase tracking-wider transition-all"
-            >
-              Book Free Visit
-            </Link>
-          </div>
+        {/* Feature Service Icons */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 mt-12 border-t border-[#F0EBE1]">
+          {featureServices.map((feat, i) => {
+            const IconComp = feat.icon;
+            return (
+              <div key={i} className="flex flex-col items-center text-center space-y-3 p-4">
+                <div className="w-16 h-16 rounded-full border border-[#C5A880]/60 bg-[#FAF8F5] text-[#9E7A4A] flex items-center justify-center shadow-2xs">
+                  <IconComp className="w-7 h-7 stroke-[1.5]" />
+                </div>
+                <h4 className="font-serif text-sm font-bold text-stone-900">
+                  {feat.title}
+                </h4>
+              </div>
+            );
+          })}
         </div>
       </section>
 
-      {/* 3. Quote CTA Banner */}
-      <QuoteCtaBanner />
+      {/* 3. Window Couture Tailored to Your Dubai & Palm Jebel Ali Lifestyle */}
+      <section className="py-14 max-w-4xl mx-auto px-4 text-center space-y-3 border-t border-[#E6DFD5]">
+        <h2 className="font-serif text-2xl sm:text-3xl text-stone-950 font-normal">
+          Got More Questions About Your Dubai Home?
+        </h2>
+        <p className="text-xs sm:text-sm text-stone-600 leading-relaxed max-w-2xl mx-auto">
+          Our styling consultants and laser measuring team are available 7 days a week across Palm Jebel Ali, Palm Jumeirah, and all Dubai communities. Speak directly with an expert today.
+        </p>
+      </section>
+
+      {/* 4. Book a FREE Same Day Appointment Section */}
+      <AppointmentBookingSection
+        title="Book a FREE same day appointment"
+        subtitle="Our mobile design van visits your Palm Jebel Ali villa or Dubai residence with 1,000+ luxury fabrics & free laser measuring."
+        defaultType="Curtains"
+      />
+
+      {/* 5. Customer Reviews Section */}
+      <CustomerReviews />
     </div>
   );
 }
+

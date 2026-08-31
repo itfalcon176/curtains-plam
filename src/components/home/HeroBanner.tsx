@@ -77,7 +77,7 @@ export const HeroBanner: React.FC = () => {
               <button
                 type="button"
                 onClick={() => setIsModalOpen(true)}
-                className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-[#C5A880] hover:bg-white text-stone-950 font-sans text-xs sm:text-sm font-extrabold uppercase tracking-[0.16em] shadow-2xl shadow-[#C5A880]/30 hover:shadow-2xl hover:shadow-white/30 transition-all duration-300 transform hover:-translate-y-1 active:translate-y-0 cursor-pointer border-2 border-white"
+                className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-[#C5A880] hover:bg-white text-stone-950 font-sans text-xs sm:text-sm font-extrabold uppercase tracking-[0.16em] shadow-2xl shadow-[#C5A880]/30 hover:shadow-2xl hover:shadow-white/30 transition-all duration-300 transform hover:-translate-y-1 active:translate-y-0 cursor-pointer border border-white"
               >
                 <span>Book Free In-Home Measurement</span>
                 <span className="w-6 h-6 rounded-lg bg-white group-hover:bg-stone-950 text-stone-950 group-hover:text-white shadow-xs flex items-center justify-center transition-all group-hover:translate-x-1">
@@ -92,9 +92,7 @@ export const HeroBanner: React.FC = () => {
                 rel="noopener noreferrer"
                 className="group relative inline-flex items-center gap-3 px-7 py-4 rounded-xl bg-stone-950/70 hover:bg-stone-950 backdrop-blur-xl border border-white/25 hover:border-[#25D366] text-white hover:text-white font-sans text-xs sm:text-sm font-bold uppercase tracking-[0.16em] shadow-xl hover:shadow-[#25D366]/20 transition-all duration-300 transform hover:-translate-y-1 active:translate-y-0"
               >
-                <span className="w-6 h-6 rounded-lg bg-[#25D366]/20 border border-[#25D366]/40 flex items-center justify-center group-hover:bg-[#25D366] group-hover:text-stone-950 text-[#25D366] transition-all">
-                  <WhatsAppIcon className="w-3.5 h-3.5" />
-                </span>
+                <WhatsAppIcon className="w-6 h-6 group-hover:scale-110 transition-transform duration-300 drop-shadow-md" />
                 <span>WhatsApp Inquiry</span>
               </a>
             </motion.div>

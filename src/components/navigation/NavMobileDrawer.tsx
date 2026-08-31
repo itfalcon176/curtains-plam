@@ -7,11 +7,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { NavItem, NavigationConfig } from "@/config/navigation";
 import { NavIcon } from "./NavIcon";
 import { NavBadge } from "./NavBadge";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import {
   X,
   ChevronDown,
   Phone,
-  MessageCircle,
   MapPin,
   Calendar,
   Search,
@@ -280,7 +280,7 @@ export const NavMobileDrawer: React.FC<NavMobileDrawerProps> = ({
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 p-2.5 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-xl text-xs font-semibold hover:bg-emerald-100 transition-colors"
                   >
-                    <MessageCircle className="w-3.5 h-3.5 text-emerald-600" />
+                    <WhatsAppIcon className="w-3.5 h-3.5" />
                     <span>WhatsApp</span>
                   </a>
                 </div>

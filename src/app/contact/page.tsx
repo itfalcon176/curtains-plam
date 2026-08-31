@@ -4,16 +4,19 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { PageHero } from "@/components/common/PageHero";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
+import { AppointmentBookingSection } from "@/components/common/AppointmentBookingSection";
+import { CustomerReviews } from "@/components/common/CustomerReviews";
 import {
   MapPin,
   Phone,
-  MessageCircle,
   Mail,
   Clock,
   Send,
   CheckCircle2,
   Sparkles,
 } from "lucide-react";
+
 
 export default function ContactPage() {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -70,8 +73,8 @@ export default function ContactPage() {
               </div>
 
               <div className="p-5 rounded-2xl bg-white border border-[#E6DFD5] flex items-start gap-4 shadow-2xs">
-                <div className="w-10 h-10 rounded-xl bg-[#25D366]/15 text-[#25D366] flex items-center justify-center shrink-0">
-                  <MessageCircle className="w-5 h-5" />
+                <div className="w-10 h-10 rounded-xl bg-stone-100 flex items-center justify-center shrink-0">
+                  <WhatsAppIcon className="w-6 h-6" />
                 </div>
                 <div className="space-y-1">
                   <h4 className="text-stone-900 font-bold text-sm">WhatsApp Consultation (Instant)</h4>
@@ -169,6 +172,9 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      {/* 3. Customer Reviews */}
+      <CustomerReviews />
     </div>
   );
 }
+
