@@ -1,100 +1,33 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
-import { motion } from "framer-motion";
-import { PageHero } from "@/components/common/PageHero";
-import { QuoteCtaBanner } from "@/components/common/QuoteCtaBanner";
-import {
-  TreePine,
-  ShieldCheck,
-  CheckCircle2,
-  Sparkles,
-  Sun,
-  Sliders,
-  ArrowRight,
-} from "lucide-react";
+import { SubMenuPageTemplate } from "@/components/common/SubMenuPageTemplate";
 
 export default function WoodenVenetianBlindsPage() {
-  const benefits = [
-    {
-      title: "Authentic 50mm Hardwood Basswood",
-      desc: "Crafted from sustainably sourced natural basswood with fine wood grain stains, pure whites, and contemporary warm walnut finishes.",
-    },
-    {
-      title: "180-Degree Precision Slat Tilting",
-      desc: "Effortlessly tilt the horizontal slats to direct sunlight up toward the ceiling for glare-free room lighting while maintaining total privacy.",
-    },
-    {
-      title: "Custom Decorative Fabric Tape Ribbons",
-      desc: "Upgrade with contrasting or matching herringbone cotton tape trims to conceal cord rout holes and add a bespoke designer aesthetic.",
-    },
-    {
-      title: "Faux Wood Moisture-Proof Options",
-      desc: "High-grade polymer composite faux wood slats that resist warping, steam, and humidity in luxury Dubai master bathrooms and kitchens.",
-    },
-  ];
-
   return (
-    <div className="bg-[#FAF8F5]">
-      {/* 1. Page Hero */}
-      <PageHero
-        title="Wooden Venetian Blinds in Dubai"
-        subtitle="Handcrafted 50mm Hardwood & Faux Wood Slat Treatments"
-        badge="Easy Blinds & Curtains • Natural Wood"
-        description="Add warmth, texture, and architectural structure to your windows with custom-crafted wooden venetian blinds. Hand-stained in Dubai with UV-protective coatings."
-        breadcrumbs={[
-          { label: "Blinds", href: "/blinds" },
-          { label: "Wooden Venetian Blinds" },
-        ]}
-      />
-
-      {/* 2. Benefits Grid */}
-      <section className="py-20 max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#C5A880]/15 text-[#9E7A4A] text-xs font-bold uppercase tracking-wider">
-            <TreePine className="w-3.5 h-3.5" />
-            <span>Natural Timber Craftsmanship</span>
-          </div>
-          <h2 className="font-serif text-3xl sm:text-4xl text-stone-950 font-normal">
-            Timeless Warmth & Structural Light Control
-          </h2>
-          <p className="text-stone-600 text-sm sm:text-base">
-            Engineered with UV scratch-resistant sealants to withstand UAE sunlight without fading or cracking.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {benefits.map((item, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.08 }}
-              className="bg-white rounded-3xl p-8 border border-[#E6DFD5] shadow-xs hover:shadow-lg transition-all duration-300 space-y-3"
-            >
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-[#EFEAE1] text-[#9E7A4A] flex items-center justify-center shrink-0">
-                  <CheckCircle2 className="w-5 h-5 text-[#C5A880]" />
-                </div>
-                <h3 className="font-serif text-xl font-bold text-stone-900">
-                  {item.title}
-                </h3>
-              </div>
-              <p className="text-xs sm:text-sm text-stone-600 leading-relaxed pl-13">
-                {item.desc}
-              </p>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-
-      {/* 3. Quote CTA Banner */}
-      <QuoteCtaBanner
-        title="Ready to Transform Your Home with Wooden Venetian Blinds?"
-        subtitle="Book Free Laser Measurement & Real Wood Swatch Presentation in Dubai"
-      />
-    </div>
+    <SubMenuPageTemplate
+      title="Wooden Venetian Blinds"
+      badge="Natural Hardwood • Handcrafted Luxury"
+      subtitle="Authentic Basswood Slats with Warm Rich Grain Stains"
+      description="Handcrafted real wood blinds that bring organic warmth, elegance, and natural texture to Palm Jebel Ali & Dubai luxury villas. Custom 50mm and 35mm slats."
+      whatIsHeading="What are Wooden Venetian Blinds?"
+      whatIsText={[
+        "Wooden Venetian blinds are premium horizontal window slats crafted from sustainably sourced real basswood or high-grade hardwood. They feature rich, warm wood grain stains and hand-finished decorative cloth ladder tapes.",
+        "Engineered with kiln-dried wood to prevent warping under UAE heat, our wooden blinds provide organic luxury, thermal insulation, and timeless sophistication for executive offices, living rooms, and master bedrooms.",
+      ]}
+      images={["/card-wooden-blinds.jpg", "/blinds-wooden-palm-jebel-ali.jpg"]}
+      imageAltText={[
+        "Authentic real wood basswood Venetian blinds in Dubai villa",
+        "Rich warm grain wooden window slats in luxury living room",
+      ]}
+      whyNeedHeading="Why You Need Wooden Venetian Blinds in Dubai"
+      whyNeedPoints={[
+        "Natural Organic Warmth: Adds timeless natural timber elegance to modern and classic villa interiors.",
+        "Superior Thermal Insulation: Wood naturally insulates against heat, keeping villa interiors noticeably cooler.",
+        "UV Anti-Warp Treatment: Kiln-dried basswood treated with protective UV coats to prevent warping or color fading.",
+        "Custom Slat & Tape Options: Choose 35mm or 50mm slats with matching or contrasting woven cotton tapes.",
+      ]}
+      categoryParent={{ label: "Blinds", href: "/blinds" }}
+    />
   );
 }

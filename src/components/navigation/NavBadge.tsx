@@ -25,11 +25,12 @@ export const NavBadge: React.FC<NavBadgeProps> = ({ badge, className }) => {
   return (
     <span
       className={cn(
-        "inline-flex items-center gap-1 px-2 py-0.5 text-[10px] font-semibold tracking-wider uppercase rounded-full border transition-all duration-300",
+        "inline-flex items-center gap-1 px-2 py-0.5 text-[10px] font-semibold tracking-wider uppercase rounded-full border whitespace-nowrap shrink-0 transition-all duration-300",
         variantStyles[currentVariant],
         badge.pulse && "relative",
         className
       )}
+
     >
       {badge.pulse && (
         <span className="relative flex h-1.5 w-1.5 mr-0.5">

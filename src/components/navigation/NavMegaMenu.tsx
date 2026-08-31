@@ -167,14 +167,17 @@ export const NavMegaMenu: React.FC<NavMegaMenuProps> = ({
                             <div className="absolute top-0 right-0 w-36 h-36 bg-[#C5A880]/15 rounded-full blur-2xl pointer-events-none" />
 
                             <div className="space-y-3 relative z-10">
-                              <div className="flex items-center justify-between">
-                                <span className="text-[10px] font-bold uppercase tracking-widest text-[#C5A880]">
+                              <div className="flex items-center justify-between gap-2 min-w-0">
+                                <span className="text-[10px] font-bold uppercase tracking-widest text-[#C5A880] truncate">
                                   {currentTab.promoCard.subtitle || "Exclusive"}
                                 </span>
                                 {currentTab.promoCard.badge && (
-                                  <NavBadge badge={currentTab.promoCard.badge} />
+                                  <div className="shrink-0">
+                                    <NavBadge badge={currentTab.promoCard.badge} />
+                                  </div>
                                 )}
                               </div>
+
 
                               <h3 className="text-base font-serif font-bold text-white leading-snug">
                                 {currentTab.promoCard.title}
