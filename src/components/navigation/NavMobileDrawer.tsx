@@ -108,25 +108,7 @@ export const NavMobileDrawer: React.FC<NavMobileDrawerProps> = ({
               </button>
             </div>
 
-            {/* Quick Search Bar */}
-            <div className="p-4 border-b border-[#E6DFD5]/80 bg-white/60">
-              <button
-                type="button"
-                onClick={() => {
-                  onClose();
-                  if (onOpenSearch) onOpenSearch();
-                }}
-                className="w-full flex items-center justify-between px-3.5 py-2.5 bg-[#FAF8F5] border border-[#E6DFD5] rounded-xl text-stone-500 text-xs hover:border-[#C5A880] transition-colors"
-              >
-                <div className="flex items-center gap-2">
-                  <Search className="w-4 h-4 text-[#9E7A4A]" />
-                  <span>Search curtains, blinds, fabrics...</span>
-                </div>
-                <kbd className="px-1.5 py-0.5 text-[10px] bg-stone-200/80 rounded text-stone-600 font-mono">
-                  ⌘K
-                </kbd>
-              </button>
-            </div>
+
 
             {/* Scrollable Navigation List */}
             <div className="flex-1 overflow-y-auto p-4 space-y-1 divide-y divide-[#E6DFD5]/60">

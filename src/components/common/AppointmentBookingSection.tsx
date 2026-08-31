@@ -1,7 +1,9 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+
 import {
   MapPin,
   Phone,
@@ -313,9 +315,15 @@ export const AppointmentBookingSection: React.FC<AppointmentBookingSectionProps>
                       />
                       <span>
                         I agree to the{" "}
-                        <span className="text-stone-900 font-semibold underline">Terms of Service</span>{" "}
-                        & Privacy Policy.
+                        <Link href="/terms-of-service" target="_blank" className="text-stone-900 font-semibold underline hover:text-[#9E7A4A]">
+                          Terms of Service
+                        </Link>{" "}
+                        &amp;{" "}
+                        <Link href="/privacy-policy" target="_blank" className="text-stone-900 font-semibold underline hover:text-[#9E7A4A]">
+                          Privacy Policy
+                        </Link>.
                       </span>
+
                     </label>
                   </div>
                 </div>

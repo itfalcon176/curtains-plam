@@ -172,10 +172,10 @@ export const Footer: React.FC = () => {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
           <p>© {new Date().getFullYear()} Easy Blinds and Curtains Dubai. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <Link href="/faqs" className="hover:text-stone-300">Privacy Policy</Link>
-            <Link href="/faqs" className="hover:text-stone-300">Terms of Service</Link>
-            <Link href="/contact" className="hover:text-stone-300">Sitemap</Link>
+            <Link href="/privacy-policy" className="hover:text-stone-300 transition-colors">Privacy Policy</Link>
+            <Link href="/terms-of-service" className="hover:text-stone-300 transition-colors">Terms of Service</Link>
           </div>
+
         </div>
       </div>
     </footer>

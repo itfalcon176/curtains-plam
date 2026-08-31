@@ -1,7 +1,9 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+
 import { X, Calendar, Clock, MapPin, CheckCircle2, Phone, RefreshCw } from "lucide-react";
 import { UaeFlag } from "./UaeFlag";
 import { navigationConfig } from "@/config/navigation";
@@ -256,7 +258,17 @@ export const BookAppointmentModal: React.FC<BookAppointmentModalProps> = ({
                           onChange={(e) => setAgreed(e.target.checked)}
                           className="w-3.5 h-3.5 rounded border-stone-300 text-[#C5A880] focus:ring-[#C5A880] mt-0.5"
                         />
-                        <span>I agree to your Terms of Service and Privacy Policy</span>
+                        <span>
+                          I agree to your{" "}
+                          <Link href="/terms-of-service" target="_blank" className="underline hover:text-[#9E7A4A]">
+                            Terms of Service
+                          </Link>{" "}
+                          and{" "}
+                          <Link href="/privacy-policy" target="_blank" className="underline hover:text-[#9E7A4A]">
+                            Privacy Policy
+                          </Link>
+                        </span>
+
                       </label>
                     </div>
                   </div>

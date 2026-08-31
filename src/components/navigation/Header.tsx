@@ -76,7 +76,7 @@ export const Header: React.FC<HeaderProps> = ({
         >
           {/* Responsive Wide Container */}
           <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10">
-            <div className="flex items-center justify-between gap-4 xl:gap-8">
+            <div className="flex items-center justify-between gap-2 sm:gap-4 xl:gap-8">
               {/* Left: Brand Logo */}
               <div className="shrink-0">
                 <Link
@@ -84,25 +84,25 @@ export const Header: React.FC<HeaderProps> = ({
                   className="group flex items-center transition-opacity duration-200 hover:opacity-90 whitespace-nowrap"
                 >
                   {isTransparent ? (
-                    <div className="relative h-10 sm:h-11.5 md:h-12 w-auto flex items-center">
+                    <div className="relative h-8 sm:h-10 md:h-11.5 w-auto flex items-center">
                       <Image
                         src={config.brand.logoImageWhite || config.brand.logoImage || "/EasyBlindscurtain_logo-palm-white.png"}
                         alt={config.brand.name}
                         width={240}
                         height={60}
                         priority
-                        className="h-9 sm:h-10.5 md:h-11.5 w-auto object-contain"
+                        className="h-7.5 sm:h-9.5 md:h-11 w-auto object-contain"
                       />
                     </div>
                   ) : (
-                    <div className="relative h-10 sm:h-11.5 md:h-12 w-auto flex items-center">
+                    <div className="relative h-8 sm:h-10 md:h-11.5 w-auto flex items-center">
                       <Image
                         src={config.brand.logoImage || "/EasyBlindscurtain_logo-palm.png"}
                         alt={config.brand.name}
                         width={240}
                         height={60}
                         priority
-                        className="h-9 sm:h-10.5 md:h-11.5 w-auto object-contain"
+                        className="h-7.5 sm:h-9.5 md:h-11 w-auto object-contain"
                       />
                     </div>
                   )}
@@ -114,19 +114,21 @@ export const Header: React.FC<HeaderProps> = ({
                 <NavDesktop items={config.mainNav} isTransparent={isTransparent} />
               </div>
 
-              {/* Right: Direct Phone Button */}
-              <div className="flex items-center gap-2 sm:gap-3 shrink-0 whitespace-nowrap">
+              {/* Right: Direct Phone Button & Mobile Hamburger Menu */}
+              <div className="flex items-center gap-2 sm:gap-3 shrink-0">
                 <a
                   href={`tel:${config.topBar.phoneRaw}`}
+                  aria-label="Call Easy Blinds & Curtains"
                   className={cn(
-                    "flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold transition-all shadow-2xs whitespace-nowrap",
+                    "flex items-center gap-1.5 px-2.5 sm:px-3.5 py-1.5 rounded-full text-xs font-bold transition-all shadow-2xs shrink-0",
                     isTransparent
                       ? "bg-black/35 hover:bg-black/55 backdrop-blur-md border border-white/25 text-white hover:border-[#C5A880]"
                       : "bg-white border border-[#E6DFD5] text-stone-900 hover:border-[#C5A880] hover:text-[#9E7A4A]"
                   )}
                 >
                   <Phone className="w-3.5 h-3.5 text-[#C5A880] shrink-0" />
-                  <span className="whitespace-nowrap">{config.topBar.phone}</span>
+                  <span className="hidden sm:inline whitespace-nowrap">{config.topBar.phone}</span>
+                  <span className="sm:hidden text-[11px] font-bold">Call</span>
                 </a>
 
                 {/* Mobile Hamburger Button */}
@@ -135,7 +137,7 @@ export const Header: React.FC<HeaderProps> = ({
                   onClick={() => setIsMobileDrawerOpen(true)}
                   aria-label="Open navigation menu"
                   className={cn(
-                    "lg:hidden p-2 rounded-xl transition-colors shadow-2xs cursor-pointer shrink-0 border",
+                    "lg:hidden p-2 rounded-xl transition-colors shadow-2xs cursor-pointer shrink-0 border flex items-center justify-center",
                     isTransparent
                       ? "bg-black/35 backdrop-blur-md border-white/25 text-white hover:bg-black/55"
                       : "bg-white border-[#E6DFD5] text-stone-800 hover:text-stone-950 hover:bg-stone-50"
@@ -145,6 +147,7 @@ export const Header: React.FC<HeaderProps> = ({
                 </button>
               </div>
             </div>
+
           </div>
         </div>
       </header>
