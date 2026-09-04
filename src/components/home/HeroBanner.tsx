@@ -24,9 +24,9 @@ export const HeroBanner: React.FC = () => {
             sizes="100vw"
           />
 
-          {/* Minimal Natural Gradient for Text Legibility — Zero Boxy Look */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/35 to-transparent z-1" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/15 z-1" />
+          {/* Minimal Natural Gradient for Text Legibility */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-black/15 z-1" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/25 z-1" />
         </div>
 
         {/* 2. Direct Open Modern Typography (No Background Cards/Boxes) */}
@@ -36,14 +36,15 @@ export const HeroBanner: React.FC = () => {
 
           {/* Middle Main Content */}
           <div className="max-w-2xl lg:max-w-3xl space-y-4 my-auto">
-            {/* Gold Subtitle Tag */}
+            {/* Gold Subtitle Tag with High Contrast */}
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-[#B58E52] text-xs sm:text-sm font-bold uppercase tracking-[0.25em] font-sans"
+              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-stone-950/80 backdrop-blur-md border border-[#C5A880]/60 text-[#F3DEB8] text-[11px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.2em] font-sans shadow-lg drop-shadow-md"
             >
-              Easy Blinds &amp; Curtains • Palm Jebel Ali
+              <span className="w-1.5 h-1.5 rounded-full bg-[#C5A880] animate-pulse shrink-0" />
+              <span>Easy Blinds &amp; Curtains • Palm Jebel Ali</span>
             </motion.div>
 
             {/* Main Headline in Baskervville Serif */}
@@ -71,16 +72,16 @@ export const HeroBanner: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex flex-wrap items-center gap-4 pt-4"
+              className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 pt-4 w-full sm:w-auto"
             >
               {/* Primary Luxury Gold & White Button with White Border & White Arrow Badge */}
               <button
                 type="button"
                 onClick={() => setIsModalOpen(true)}
-                className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-[#C5A880] hover:bg-white text-stone-950 font-sans text-xs sm:text-sm font-extrabold uppercase tracking-[0.16em] shadow-2xl shadow-[#C5A880]/30 hover:shadow-2xl hover:shadow-white/30 transition-all duration-300 transform hover:-translate-y-1 active:translate-y-0 cursor-pointer border border-white"
+                className="group relative inline-flex items-center justify-center gap-3 px-5 sm:px-8 py-3.5 sm:py-4 rounded-xl bg-[#C5A880] hover:bg-white text-stone-950 font-sans text-xs sm:text-sm font-extrabold uppercase tracking-[0.1em] sm:tracking-[0.16em] shadow-2xl shadow-[#C5A880]/30 hover:shadow-2xl hover:shadow-white/30 transition-all duration-300 transform hover:-translate-y-1 active:translate-y-0 cursor-pointer border border-white w-full sm:w-auto min-h-[52px] sm:min-h-[56px] text-center"
               >
                 <span>Book Free In-Home Measurement</span>
-                <span className="w-6 h-6 rounded-lg bg-white group-hover:bg-stone-950 text-stone-950 group-hover:text-white shadow-xs flex items-center justify-center transition-all group-hover:translate-x-1">
+                <span className="w-6 h-6 rounded-lg bg-white group-hover:bg-stone-950 text-stone-950 group-hover:text-white shadow-xs flex items-center justify-center transition-all group-hover:translate-x-1 shrink-0">
                   <ArrowRight className="w-3.5 h-3.5" />
                 </span>
               </button>
@@ -90,7 +91,7 @@ export const HeroBanner: React.FC = () => {
                 href="https://wa.me/971508349761?text=Hi%20Easy%20Blinds%2C%20I%20would%20like%20to%20inquire%20about%20custom%20curtains%20and%20blinds."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative inline-flex items-center gap-3 px-7 py-4 rounded-xl bg-stone-950/70 hover:bg-stone-950 backdrop-blur-xl border border-white/25 hover:border-[#C5A880] text-white hover:text-white font-sans text-xs sm:text-sm font-bold uppercase tracking-[0.16em] shadow-xl hover:shadow-[#C5A880]/20 transition-all duration-300 transform hover:-translate-y-1 active:translate-y-0"
+                className="group relative inline-flex items-center justify-center gap-3 px-5 sm:px-7 py-3.5 sm:py-4 rounded-xl bg-stone-950/70 hover:bg-stone-950 backdrop-blur-xl border border-white/25 hover:border-[#C5A880] text-white hover:text-white font-sans text-xs sm:text-sm font-bold uppercase tracking-[0.1em] sm:tracking-[0.16em] shadow-xl hover:shadow-[#C5A880]/20 transition-all duration-300 transform hover:-translate-y-1 active:translate-y-0 w-full sm:w-auto min-h-[52px] sm:min-h-[56px] text-center"
               >
                 <WhatsAppIcon className="w-5 h-5 text-white group-hover:text-[#C5A880] group-hover:scale-110 transition-all duration-300 drop-shadow-md shrink-0" />
                 <span>WhatsApp Inquiry</span>
