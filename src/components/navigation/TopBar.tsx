@@ -31,9 +31,9 @@ export const TopBar: React.FC<TopBarProps> = ({ config, onOpenBooking }) => {
               href={`https://wa.me/${config.whatsappRaw.replace("+", "")}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-stone-300 hover:text-[#25D366] transition-colors shrink-0"
+              className="inline-flex items-center gap-1.5 text-stone-300 hover:text-[#C5A880] transition-colors shrink-0"
             >
-              <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366]" />
+              <WhatsAppIcon className="w-3.5 h-3.5 text-[#C5A880]" />
               <span className="hidden md:inline">WhatsApp:</span>
               <span>{config.whatsapp}</span>
             </a>

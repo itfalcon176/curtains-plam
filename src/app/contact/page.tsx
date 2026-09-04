@@ -73,8 +73,8 @@ export default function ContactPage() {
               </div>
 
               <div className="p-5 rounded-2xl bg-white border border-[#E6DFD5] flex items-start gap-4 shadow-2xs">
-                <div className="w-10 h-10 rounded-xl bg-stone-100 flex items-center justify-center shrink-0">
-                  <WhatsAppIcon className="w-6 h-6" />
+                <div className="w-10 h-10 rounded-xl bg-[#C5A880]/15 text-[#C5A880] flex items-center justify-center shrink-0">
+                  <WhatsAppIcon className="w-5 h-5 text-[#C5A880]" />
                 </div>
                 <div className="space-y-1">
                   <h4 className="text-stone-900 font-bold text-sm">WhatsApp Consultation (Instant)</h4>
@@ -82,7 +82,7 @@ export default function ContactPage() {
                     href="https://wa.me/971508349761?text=Hi%20Easy%20Blinds%2C%20I%20would%20like%20to%20inquire"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs text-[#25D366] font-semibold hover:underline block"
+                    className="text-xs text-[#9E7A4A] font-semibold hover:underline block"
                   >
                     +971 50 834 9761
                   </a>

@@ -47,7 +47,7 @@ export const SideContactBar: React.FC = () => {
 
               {/* Official WhatsApp 2-Color Emblem */}
               <div className="w-7 h-7 mb-1.5 flex items-center justify-center group-hover:scale-110 transition-transform">
-                <WhatsAppIcon className="w-6.5 h-6.5" />
+                <WhatsAppIcon className="w-6.5 h-6.5" variant="official" />
               </div>
 
               <span className="text-[9.5px] font-sans font-bold uppercase tracking-[0.12em] text-center leading-tight">

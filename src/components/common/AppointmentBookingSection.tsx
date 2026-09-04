@@ -152,7 +152,7 @@ export const AppointmentBookingSection: React.FC<AppointmentBookingSectionProps>
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#25D366] hover:bg-[#1EBE5D] text-white rounded-full text-xs font-bold uppercase tracking-wider transition-all shadow-lg hover:scale-105"
                   >
-                    <WhatsAppIcon className="w-4 h-4" />
+                    <WhatsAppIcon className="w-4 h-4 text-white" />
                     <span>Confirm via WhatsApp</span>
                   </a>
 
@@ -418,14 +418,14 @@ export const AppointmentBookingSection: React.FC<AppointmentBookingSectionProps>
                 </div>
 
                 <div className="flex items-center gap-3.5 p-3 rounded-xl bg-white/5 border border-white/10">
-                  <WhatsAppIcon className="w-4 h-4 shrink-0" />
+                  <WhatsAppIcon className="w-4 h-4 text-[#C5A880] shrink-0" />
                   <div>
                     <span className="text-[10px] text-stone-400 block uppercase">Instant WhatsApp</span>
                     <a
                       href={`https://wa.me/${navigationConfig.topBar.whatsappRaw.replace("+", "")}?text=Hi%20Easy%20Blinds%2C%20I%20would%20like%20to%20book%20a%20free%20home%20visit`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:underline font-bold text-[#25D366]"
+                      className="hover:underline font-bold text-white hover:text-[#C5A880]"
                     >
                       {navigationConfig.topBar.whatsapp}
                     </a>

@@ -235,7 +235,7 @@ export const CategoryShopCards: React.FC = () => {
                 rel="noopener noreferrer"
                 className="px-5 py-3.5 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/25 text-white text-xs font-bold uppercase tracking-wider rounded-xl transition-all flex items-center gap-2"
               >
-                <WhatsAppIcon className="w-4 h-4" />
+                <WhatsAppIcon className="w-4 h-4 text-white shrink-0" />
                 <span>WhatsApp Us</span>
               </a>
             </div>

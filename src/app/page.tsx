@@ -201,7 +201,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="px-6 py-3.5 bg-[#25D366] hover:bg-[#1EBE5D] text-white rounded-full text-xs font-bold uppercase tracking-wider transition-all inline-flex items-center gap-2"
                 >
-                  <WhatsAppIcon className="w-4 h-4" />
+                  <WhatsAppIcon className="w-4 h-4 text-white shrink-0" />
                   <span>WhatsApp Swatch Photos</span>
                 </a>
               </div>

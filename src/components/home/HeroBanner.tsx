@@ -90,9 +90,9 @@ export const HeroBanner: React.FC = () => {
                 href="https://wa.me/971508349761?text=Hi%20Easy%20Blinds%2C%20I%20would%20like%20to%20inquire%20about%20custom%20curtains%20and%20blinds."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative inline-flex items-center gap-3 px-7 py-4 rounded-xl bg-stone-950/70 hover:bg-stone-950 backdrop-blur-xl border border-white/25 hover:border-[#25D366] text-white hover:text-white font-sans text-xs sm:text-sm font-bold uppercase tracking-[0.16em] shadow-xl hover:shadow-[#25D366]/20 transition-all duration-300 transform hover:-translate-y-1 active:translate-y-0"
+                className="group relative inline-flex items-center gap-3 px-7 py-4 rounded-xl bg-stone-950/70 hover:bg-stone-950 backdrop-blur-xl border border-white/25 hover:border-[#C5A880] text-white hover:text-white font-sans text-xs sm:text-sm font-bold uppercase tracking-[0.16em] shadow-xl hover:shadow-[#C5A880]/20 transition-all duration-300 transform hover:-translate-y-1 active:translate-y-0"
               >
-                <WhatsAppIcon className="w-6 h-6 group-hover:scale-110 transition-transform duration-300 drop-shadow-md" />
+                <WhatsAppIcon className="w-5 h-5 text-white group-hover:text-[#C5A880] group-hover:scale-110 transition-all duration-300 drop-shadow-md shrink-0" />
                 <span>WhatsApp Inquiry</span>
               </a>
             </motion.div>
