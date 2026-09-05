@@ -14,8 +14,8 @@ export default function PinchPleatCurtainsPage() {
         "Pinch Pleat Curtains (Triple Pinch Pleat) are a classic custom drapery style where groups of three fabric folds are tightly hand-stitched together at regular intervals along the top header. This creates stiffened, permanent fan-shaped pleats that retain their rich shape permanently.",
         "Because pinch pleats use more fabric fullness (usually 2.5x to 3x window width), they create dense, luxurious fabric folds that drape with substantial weight and elegance.",
       ]}
-      images={["/card-wave-curtains.jpg", "/card-fabric-swatches.jpg"]}
-      imageAltText={["Pinch Pleat Header Detail", "Formal Villa Living Room"]}
+      images={["/card-pinch-pleat-detail.jpg", "/card-pinch-pleat-salon.jpg"]}
+      imageAltText={["Artisanal Triple Pinch Pleat Header Detail", "Formal Grand Villa Salon with Triple Pinch Pleat Drapes"]}
       whyNeedHeading="Why You Need Pinch Pleat Curtains in Dubai"
       whyNeedPoints={[
         "Hand-Crafted Luxury Tailoring: Each triple pleat is hand-measured and stitched by master drapery artisans.",

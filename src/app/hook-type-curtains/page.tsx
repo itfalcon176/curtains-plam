@@ -14,8 +14,8 @@ export default function HookTypeCurtainsPage() {
         "Hook Type Curtains utilize specialized drapery heading tape or pin hooks inserted directly into the back top header of the curtain. This allows the hooks to remain completely hidden from view while attaching securely to track runners or pole rings.",
         "Equipped with multi-position height-adjustable hooks, these drapes allow precision leveling so your curtains hover exactly 5mm above your finished flooring or marble tiles with absolute perfection.",
       ]}
-      images={["/card-blackout-curtains.jpg", "/card-wave-curtains.jpg"]}
-      imageAltText={["Concealed Hook Header", "Custom Track Drapes"]}
+      images={["/card-hook-curtains-detail.jpg", "/card-hook-curtains-salon.jpg"]}
+      imageAltText={["Adjustable Curtain Header Hooks and Ceiling Track", "Tailored Hook-Mounted Drapery in Luxury Villa Salon"]}
       whyNeedHeading="Why You Need Hook Type Curtains in Dubai"
       whyNeedPoints={[
         "Height Precision Adjustment: Ratcheted hooks allow millimeter-level height tuning after hanging to compensate for uneven floors.",
