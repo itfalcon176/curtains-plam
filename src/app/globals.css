@@ -10,6 +10,10 @@
 }
 
 @theme {
+  --color-gold: #C5A880;
+  --color-gold-dark: #9E7A4A;
+  --color-gold-light: #EFEAE1;
+  --color-charcoal: #1B1C1F;
   --font-sans: var(--font-sans), system-ui, -apple-system, sans-serif;
   --font-serif: var(--font-baskerville), "Baskervville", Georgia, serif;
   --font-baskerville: var(--font-baskerville), "Baskervville", Georgia, serif;
