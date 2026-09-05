@@ -14,8 +14,8 @@ export default function WaveCurtainsPage() {
         "Wave Curtains (S-Fold / Ripple Fold) are a contemporary curtain tailoring style where fabric hangs in continuous, smooth, uniform S-shaped waves. Unlike traditional pleated curtains that bunch at the top, wave drapes flow seamlessly from ceiling to floor.",
         "Engineered with a concealed ceiling recess track and connected runner cord system, wave curtains stack back tightly when opened, leaving window glass completely clear to maximize your UAE outdoor views and natural light.",
       ]}
-      images={["/curtains-wave-palm-jebel-ali.jpg", "/card-wave-curtains.jpg"]}
-      imageAltText={["Wave Curtains Villa living room", "S-Fold Drapery"]}
+      images={["/card-wave-curtains-villa.jpg", "/card-wave-curtains-suite.jpg"]}
+      imageAltText={["Floor-to-Ceiling Wave Pleat Curtains in Villa", "Ripple-Fold S-Wave Drapes in Luxury Master Suite"]}
       whyNeedHeading="Why You Need Wave Curtains in Dubai"
       whyNeedPoints={[
         "Symmetrical Uniform Waves: Specially engineered runners maintain crisp, continuous S-curve folds from edge to edge.",

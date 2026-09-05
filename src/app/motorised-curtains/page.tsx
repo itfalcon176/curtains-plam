@@ -14,8 +14,8 @@ export default function MotorisedCurtainsPage() {
         "Motorised Curtains combine high-end custom drapery with quiet electric motor tracks. Powered by rechargeable lithium batteries or concealed hardwired mains power, these motorized systems allow you to open or close heavy floor-to-ceiling drapes at the touch of a button.",
         "Equipped with smart home connectivity, motorized tracks sync seamlessly with Apple HomeKit, Amazon Alexa, Google Assistant, Control4, and Crestron, giving you remote curtain control from anywhere in the world.",
       ]}
-      images={["/blinds-motorized-palm-jebel-ali.jpg", "/card-motorised-blinds.jpg"]}
-      imageAltText={["Motorized Smart Curtain Track", "Somfy Automated Drapes"]}
+      images={["/card-motorised-curtains-living.jpg", "/card-motorised-curtains-bedroom.jpg"]}
+      imageAltText={["Motorized Grand Wave Curtains with Remote Control", "Smart App Controlled Motorized Drapery in Master Suite"]}
       whyNeedHeading="Why You Need Motorised Curtains in Dubai"
       whyNeedPoints={[
         "Effortless Control for High Windows: Easily open double-height 6-meter living room drapes without manual tugging.",
