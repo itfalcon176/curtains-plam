@@ -14,8 +14,8 @@ export default function PencilPleatCurtainsPage() {
         "Pencil Pleat Curtains get their name from the neat row of tightly gathered folds running across the top header, resembling a row of standing pencils. Constructed with woven heading tape featuring multiple hook pockets, the width can be easily adjusted during installation.",
         "This adjustable header tape makes pencil pleat drapes adaptable to various track lengths and pole styles, providing an elegant, classic finish for any window size.",
       ]}
-      images={["/card-fabric-swatches.jpg", "/card-blackout-curtains.jpg"]}
-      imageAltText={["Pencil Pleat Header Tape", "Classic Bedroom Curtains"]}
+      images={["/card-pencil-pleat-blue.jpg", "/card-pencil-pleat-oatmeal.jpg"]}
+      imageAltText={["Classic Blue Pencil Pleat Curtains", "Neutral Oatmeal Pencil Pleat Drapes"]}
       whyNeedHeading="Why You Need Pencil Pleat Curtains in Dubai"
       whyNeedPoints={[
         "Adjustable Header Width: Cords in the heading tape allow fullness and width to be adjusted precisely during fitting.",

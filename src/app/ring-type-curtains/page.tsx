@@ -14,8 +14,8 @@ export default function RingTypeCurtainsPage() {
         "Ring Type Curtains hang from individual decorative rings sliding along a curtain pole. Attached to the back of the curtain header via discreet curtain hooks, the rings remain visible as a decorative hardware accent.",
         "Available in brushed brass, antique bronze, matte black, and carved hardwood finishes, ring-type curtain poles add an artisanal architectural statement above windows and French doors.",
       ]}
-      images={["/card-wave-curtains.jpg", "/card-wooden-blinds.jpg"]}
-      imageAltText={["Decorative Ring Header", "Custom Pole & Ring Drapes"]}
+      images={["/card-ring-curtains-metal.jpg", "/card-ring-curtains-wooden.jpg"]}
+      imageAltText={["Stainless Steel Rings & Roller Pole with Tailored Drapes", "Natural Timber Wooden Rings & Pole with Linen Drapes"]}
       whyNeedHeading="Why You Need Ring Type Curtains in Dubai"
       whyNeedPoints={[
         "Decorative Hardware Statement: Accentuate your interior architecture with hand-finished metal or timber curtain rods.",
