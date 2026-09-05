@@ -14,8 +14,8 @@ export default function DoublePleatCurtainsPage() {
         "Double Pleat Curtains feature paired fabric folds hand-stitched at the header at precise intervals. Offering a slightly cleaner and less bulky top header than triple pinch pleats, double pleats strike the ideal balance between traditional tailoring and contemporary simplicity.",
         "When pulled open, double pleat curtains compress into a narrower side stack, allowing more window glass and natural light to be uncovered in compact rooms or balcony doorways.",
       ]}
-      images={["/card-sheer-curtains.jpg", "/card-wave-curtains.jpg"]}
-      imageAltText={["Double Pleat Header", "Custom Linen Drapes"]}
+      images={["/card-double-pleat-track.jpg", "/card-double-pleat-pole.jpg"]}
+      imageAltText={["Double Pleat Heading on Ceiling Track", "Double Pinch Pleat Header with Pole Rings"]}
       whyNeedHeading="Why You Need Double Pleat Curtains in Dubai"
       whyNeedPoints={[
         "Slimmer Side Stack Width: Occupies less wall space when open, maximizing glass exposure and sea views.",
