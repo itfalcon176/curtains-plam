@@ -15,10 +15,10 @@ export default function HospitalBlindsPage() {
         "Hospital blinds and cubicle curtains are specialized healthcare window and space division solutions designed to meet rigorous hygiene, safety, and privacy standards. In modern medical environments across Dubai, maintaining infection control while providing patient dignity and comfort is essential.",
         "Crafted with silver-ion antimicrobial coatings and flame-retardant synthetic fibers, our medical curtains and wipeable PVC roller blinds resist bacteria, mold, and fluid absorption. They operate on silent ceiling-recessed aluminum tracks designed for zero snagging.",
       ]}
-      images={["/card-medical-curtains.jpg", "/card-commercial-office.jpg"]}
+      images={["/card-medical-curtains.jpg", "/card-medical-clinic.jpg"]}
       imageAltText={[
         "Antimicrobial medical cubicle curtains in Dubai hospital",
-        "Wipeable healthcare roller blinds in clinic room",
+        "Wipeable healthcare cubicle drapery in clinic room",
       ]}
       whyNeedHeading="Why Medical Facilities in Dubai Require Specialized Blinds"
       whyNeedPoints={[

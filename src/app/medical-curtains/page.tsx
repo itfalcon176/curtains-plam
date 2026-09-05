@@ -14,8 +14,8 @@ export default function MedicalCurtainsPage() {
         "Medical Curtains are specialized antibacterial and flame-retardant fabric partitions used in hospital patient rooms, emergency wards, consultation suites, and clinical therapy bays. Fabricated with silver-ion or permanent anti-microbial treatments, they prevent cross-contamination and bacterial growth in high-sanitation environments.",
         "Equipped with ventilated ceiling mesh tops for sprinkler system compliance and heavy-duty smooth glide aluminum tracking, our healthcare curtains meet all UAE Ministry of Health and Dubai Civil Defense safety regulations.",
       ]}
-      images={["/card-medical-curtains.jpg", "/card-commercial-office.jpg"]}
-      imageAltText={["Hospital Cubicle Curtains", "Dubai Clinic Suite"]}
+      images={["/card-medical-curtains.jpg", "/card-medical-clinic.jpg"]}
+      imageAltText={["Hospital Cubicle Curtains", "Dubai Medical Clinic Cubicle Drapery"]}
       whyNeedHeading="Why You Need Certified Medical Curtains in Dubai"
       whyNeedPoints={[
         "DHA & UAE Health Regulation Compliance: Certified anti-microbial and flame-retardant materials adhering to strict healthcare fitout standards.",
