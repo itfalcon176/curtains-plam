@@ -14,8 +14,8 @@ export default function ThermalCurtainsPage() {
         "Thermal Curtains are specialized insulated window drapes featuring a multi-layered thermal backing or high-density woven interlining. Designed to trap a layer of insulating air between your window glass and living room, they prevent outside ambient heat from radiating indoors.",
         "In addition to heat blocking during hot Dubai summer months, thermal curtains block 100% of solar UV rays, protect interior furnishings, and significantly cut down AC power consumption.",
       ]}
-      images={["/card-blackout-curtains.jpg", "/curtains-wave-palm-jebel-ali.jpg"]}
-      imageAltText={["Thermal Insulated Curtains", "Beachfront Villa Thermal Drapes"]}
+      images={["/card-thermal-curtains-cream-top.jpg", "/card-thermal-curtains-emerald-top.jpg"]}
+      imageAltText={["Tailored Insulated Cream Drapes Header & Rod", "Eyelet Top UV Blocking Emerald Green Thermal Drapes"]}
       whyNeedHeading="Why You Need Thermal Curtains in Dubai"
       whyNeedPoints={[
         "Up to 40% AC Energy Reduction: Cuts heat gain through large glass windows, reducing air conditioning workloads.",
