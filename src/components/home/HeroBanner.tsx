@@ -41,10 +41,10 @@ export const HeroBanner: React.FC = () => {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-stone-950/80 backdrop-blur-md border border-[#C5A880]/60 text-[#F3DEB8] text-[11px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.2em] font-sans shadow-lg drop-shadow-md"
+              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-stone-950/80 backdrop-blur-md border border-[#C5A880]/60 text-[#F3DEB8] text-[11px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.14em] sm:tracking-[0.2em] font-sans shadow-lg drop-shadow-md whitespace-nowrap max-w-full"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-[#C5A880] animate-pulse shrink-0" />
-              <span>Easy Blinds &amp; Curtains • Palm Jebel Ali</span>
+              <span className="whitespace-nowrap">Easy Blinds &amp; Curtains • Palm Jebel Ali</span>
             </motion.div>
 
             {/* Main Headline in Baskervville Serif */}

@@ -119,9 +119,9 @@ export const CategoryShopCards: React.FC = () => {
         <div className="max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
           {/* Section Header */}
           <div className="text-center max-w-4xl mx-auto mb-14 sm:mb-18 space-y-4">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#C5A880]/15 text-[#9E7A4A] text-xs font-bold uppercase tracking-[0.2em] border border-[#C5A880]/30">
-              <Crown className="w-3.5 h-3.5" />
-              <span>Easy Blinds &amp; Curtains • Dubai Collections</span>
+            <div className="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-[#C5A880]/15 text-[#9E7A4A] text-[10px] sm:text-xs font-bold uppercase tracking-[0.14em] sm:tracking-[0.2em] border border-[#C5A880]/30 whitespace-nowrap max-w-full">
+              <Crown className="w-3.5 h-3.5 shrink-0" />
+              <span className="whitespace-nowrap">Easy Blinds &amp; Curtains • Dubai Collections</span>
             </div>
 
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-stone-950 font-normal uppercase tracking-wide leading-tight">
@@ -207,24 +207,24 @@ export const CategoryShopCards: React.FC = () => {
 
           {/* Bottom Free Consultation Callout Bar */}
           <div className="mt-14 p-6 sm:p-8 rounded-3xl bg-stone-950 text-white flex flex-col md:flex-row items-center justify-between gap-6 border border-white/15 shadow-xl">
-            <div className="space-y-1.5 text-center md:text-left">
-              <div className="inline-flex items-center gap-2 text-[#C5A880] text-xs font-bold uppercase tracking-widest">
-                <ShieldCheck className="w-4 h-4" />
+            <div className="space-y-1.5 text-center md:text-left w-full md:w-auto">
+              <div className="inline-flex items-center justify-center md:justify-start gap-2 text-[#C5A880] text-[11px] sm:text-xs font-bold uppercase tracking-widest">
+                <ShieldCheck className="w-4 h-4 shrink-0" />
                 <span>Complimentary 24h In-Home Measurement</span>
               </div>
               <h3 className="font-serif text-xl sm:text-2xl font-normal text-white">
                 Not sure which style fits your space?
               </h3>
-              <p className="text-xs sm:text-sm text-stone-300 font-light">
+              <p className="text-xs sm:text-sm text-stone-300 font-light max-w-xl">
                 Our Mobile Showroom Van brings 1,000+ fabric swatches, smart motor demos, and laser measurement directly to your doorstep.
               </p>
             </div>
 
-            <div className="flex flex-wrap items-center gap-3 shrink-0">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full md:w-auto shrink-0">
               <button
                 type="button"
                 onClick={() => setIsBookingModalOpen(true)}
-                className="px-6 py-3.5 bg-gradient-to-r from-[#C5A880] to-[#A8875B] hover:from-[#D4B992] hover:to-[#B4966E] text-stone-950 text-xs font-bold uppercase tracking-wider rounded-xl transition-all shadow-lg cursor-pointer hover:scale-102"
+                className="w-full sm:w-auto px-6 py-3.5 bg-gradient-to-r from-[#C5A880] to-[#A8875B] hover:from-[#D4B992] hover:to-[#B4966E] text-stone-950 text-xs font-bold uppercase tracking-wider rounded-xl transition-all shadow-lg cursor-pointer hover:scale-102 inline-flex items-center justify-center text-center"
               >
                 Book Free Consultation
               </button>
@@ -233,7 +233,7 @@ export const CategoryShopCards: React.FC = () => {
                 href="https://wa.me/971508349761?text=Hi%20Easy%20Blinds%2C%20I%20would%20like%20to%20view%20fabric%20swatches%20at%20my%20home."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 py-3.5 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/25 text-white text-xs font-bold uppercase tracking-wider rounded-xl transition-all flex items-center gap-2"
+                className="w-full sm:w-auto px-6 py-3.5 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/25 text-white text-xs font-bold uppercase tracking-wider rounded-xl transition-all inline-flex items-center justify-center gap-2 text-center"
               >
                 <WhatsAppIcon className="w-4 h-4 text-white shrink-0" />
                 <span>WhatsApp Us</span>

@@ -71,9 +71,9 @@ export const PalmJebelAliCurtainsOverview: React.FC = () => {
             {/* Left Column (7 Cols): Editorial Narrative + Luxury Sector Cards */}
             <div className="lg:col-span-7 space-y-7">
               {/* Luxury Top Tag */}
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#C5A880]/15 text-[#9E7A4A] text-xs font-bold uppercase tracking-[0.2em] border border-[#C5A880]/30 shadow-2xs">
-                <Crown className="w-3.5 h-3.5 text-[#9E7A4A]" />
-                <span>Palm Jebel Ali Bespoke Craftsmanship</span>
+              <div className="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-[#C5A880]/15 text-[#9E7A4A] text-[10px] sm:text-xs font-bold uppercase tracking-[0.14em] sm:tracking-[0.2em] border border-[#C5A880]/30 shadow-2xs whitespace-nowrap max-w-full">
+                <Crown className="w-3.5 h-3.5 text-[#9E7A4A] shrink-0" />
+                <span className="whitespace-nowrap">Palm Jebel Ali Bespoke Craftsmanship</span>
               </div>
 
               {/* Baskervville Serif Headline */}
@@ -168,11 +168,11 @@ export const PalmJebelAliCurtainsOverview: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => setIsBookingModalOpen(true)}
-                  className="px-8 py-4 bg-gradient-to-r from-[#C5A880] via-[#D4B992] to-[#B58E52] hover:from-[#D4B992] hover:to-[#A8875B] text-stone-950 font-sans text-xs sm:text-sm font-bold uppercase tracking-[0.18em] transition-all duration-300 shadow-xl shadow-[#C5A880]/20 rounded-xl cursor-pointer hover:scale-[1.02] active:scale-[0.98] inline-flex items-center gap-2.5"
+                  className="w-full sm:w-auto justify-center px-8 py-4 bg-gradient-to-r from-[#C5A880] via-[#D4B992] to-[#B58E52] hover:from-[#D4B992] hover:to-[#A8875B] text-stone-950 font-sans text-xs sm:text-sm font-bold uppercase tracking-[0.18em] transition-all duration-300 shadow-xl shadow-[#C5A880]/20 rounded-xl cursor-pointer hover:scale-[1.02] active:scale-[0.98] inline-flex items-center gap-2.5"
                 >
-                  <Calendar className="w-4 h-4 text-stone-950" />
+                  <Calendar className="w-4 h-4 text-stone-950 shrink-0" />
                   <span>Book A Free Appointment</span>
-                  <ArrowRight className="w-4 h-4" />
+                  <ArrowRight className="w-4 h-4 shrink-0" />
                 </button>
               </div>
             </div>
@@ -196,19 +196,19 @@ export const PalmJebelAliCurtainsOverview: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-black/10 to-stone-950/20" />
 
                 {/* Top Floating Badge */}
-                <div className="absolute top-5 left-5 flex items-center gap-2 px-4 py-2 rounded-full bg-stone-950/80 backdrop-blur-xl border border-white/20 text-white text-xs font-bold shadow-xl">
-                  <Sparkles className="w-4 h-4 text-[#C5A880]" />
+                <div className="absolute top-4 left-4 sm:top-5 sm:left-5 flex items-center gap-2 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-stone-950/80 backdrop-blur-xl border border-white/20 text-white text-[11px] sm:text-xs font-bold shadow-xl whitespace-nowrap">
+                  <Sparkles className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-[#C5A880] shrink-0" />
                   <span>1,000+ Luxury Fabrics Mobile Van</span>
                 </div>
 
                 {/* Bottom Floating Luxury Glass Card */}
-                <div className="absolute bottom-6 left-6 right-6 p-6 rounded-2xl bg-stone-950/85 backdrop-blur-2xl border border-white/20 text-white shadow-2xl space-y-3">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2 text-[#E6D7C3] text-xs font-bold uppercase tracking-wider">
-                      <ShieldCheck className="w-4 h-4 text-[#C5A880]" />
+                <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 p-4 sm:p-6 rounded-2xl bg-stone-950/85 backdrop-blur-2xl border border-white/20 text-white shadow-2xl space-y-3">
+                  <div className="flex items-center justify-between gap-2.5">
+                    <div className="flex items-center gap-2 text-[#E6D7C3] text-xs font-bold uppercase tracking-wider min-w-0">
+                      <ShieldCheck className="w-4 h-4 text-[#C5A880] shrink-0" />
                       <span>Palm Jebel Ali Express Fitting</span>
                     </div>
-                    <span className="px-2 py-0.5 rounded-full bg-[#C5A880]/20 text-[#E6D7C3] text-[10px] font-bold">
+                    <span className="px-2.5 py-0.5 rounded-full bg-[#C5A880]/20 text-[#E6D7C3] text-[10px] sm:text-xs font-bold whitespace-nowrap shrink-0">
                       24–48h
                     </span>
                   </div>

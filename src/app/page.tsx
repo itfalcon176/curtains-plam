@@ -186,11 +186,11 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="pt-2 flex items-center gap-4">
+              <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                 <button
                   type="button"
                   onClick={() => setIsBookingModalOpen(true)}
-                  className="px-6 py-3.5 bg-[#C5A880] hover:bg-[#B4966E] text-stone-950 rounded-full text-xs font-bold uppercase tracking-wider shadow-lg transition-all hover:scale-105 cursor-pointer"
+                  className="w-full sm:w-auto px-6 py-3.5 bg-gradient-to-r from-[#C5A880] to-[#B4966E] hover:from-[#D4B992] hover:to-[#A8875B] text-stone-950 rounded-xl sm:rounded-full text-xs font-bold uppercase tracking-wider shadow-lg transition-all hover:scale-[1.02] cursor-pointer inline-flex items-center justify-center text-center whitespace-nowrap"
                 >
                   Request Swatches to Palm Jebel Ali
                 </button>
@@ -199,7 +199,7 @@ export default function Home() {
                   href="https://wa.me/971508349761?text=Hi%20Easy%20Blinds%2C%20please%20send%20me%20fabric%20swatch%20photos"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-3.5 bg-[#25D366] hover:bg-[#1EBE5D] text-white rounded-full text-xs font-bold uppercase tracking-wider transition-all inline-flex items-center gap-2"
+                  className="w-full sm:w-auto px-6 py-3.5 bg-[#25D366] hover:bg-[#1EBE5D] text-white rounded-xl sm:rounded-full text-xs font-bold uppercase tracking-wider transition-all inline-flex items-center justify-center gap-2 text-center whitespace-nowrap shadow-lg hover:scale-[1.02]"
                 >
                   <WhatsAppIcon className="w-4 h-4 text-white shrink-0" />
                   <span>WhatsApp Swatch Photos</span>
