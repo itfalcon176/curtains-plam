@@ -15,10 +15,10 @@ export default function RomanBlindsPage() {
         "Roman blinds are sophisticated fabric window coverings that fold smoothly into neat horizontal pleats when raised, and lay flat into a smooth, elegant fabric panel when drawn down.",
         "Crafted with premium European linens, structured cottons, and opulent velvets, our custom Roman blinds offer a warmer, softer architectural feel than traditional hard blinds while maintaining compact room proportions.",
       ]}
-      images={["/card-sheer-curtains.jpg", "/card-blackout-curtains.jpg"]}
+      images={["/card-roman-blinds-linen.jpg", "/card-roman-curtains-grey.jpg"]}
       imageAltText={[
-        "Luxury tailored linen Roman blinds in Dubai living room",
-        "Custom blackout fabric Roman shade in Palm Jebel Ali villa",
+        "Custom Tailored Belgian Linen Roman Blinds in Modern Dubai Villa Dining Room",
+        "Modern Pleated Grey Fabric Roman Blind with Tailored Horizontal Folds",
       ]}
       whyNeedHeading="Why You Need Roman Blinds in Dubai"
       whyNeedPoints={[
