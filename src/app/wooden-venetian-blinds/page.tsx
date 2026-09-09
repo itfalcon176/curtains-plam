@@ -15,10 +15,10 @@ export default function WoodenVenetianBlindsPage() {
         "Wooden Venetian blinds are premium horizontal window slats crafted from sustainably sourced real basswood or high-grade hardwood. They feature rich, warm wood grain stains and hand-finished decorative cloth ladder tapes.",
         "Engineered with kiln-dried wood to prevent warping under UAE heat, our wooden blinds provide organic luxury, thermal insulation, and timeless sophistication for executive offices, living rooms, and master bedrooms.",
       ]}
-      images={["/card-wooden-blinds.jpg", "/blinds-wooden-palm-jebel-ali.jpg"]}
+      images={["/card-wooden-blinds.jpg", "/card-motorised-blinds-panel.jpg"]}
       imageAltText={[
         "Authentic real wood basswood Venetian blinds in Dubai villa",
-        "Rich warm grain wooden window slats in luxury living room",
+        "Motorized wooden Venetian blinds with wall smart controls in luxury residence",
       ]}
       whyNeedHeading="Why You Need Wooden Venetian Blinds in Dubai"
       whyNeedPoints={[

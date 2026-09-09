@@ -588,7 +588,7 @@ export const navigationConfig: NavigationConfig = {
                   {
                     id: "solar-screen-blinds",
                     title: "Solar Screen Blinds",
-                    href: "/roller-blinds",
+                    href: "/solar-screen-blinds",
                     description: "UV-filtering solar mesh that maintains outside view while cutting UAE heat.",
                     iconName: "SunDim",
                   },
@@ -608,7 +608,7 @@ export const navigationConfig: NavigationConfig = {
                   {
                     id: "child-safety-blinds",
                     title: "Child-Safe Cordless Systems",
-                    href: "/in-home-measuring",
+                    href: "/child-safety-blinds",
                     description: "Spring-loaded and motorized systems ensuring 100% child safety.",
                     iconName: "ShieldCheck",
                   },

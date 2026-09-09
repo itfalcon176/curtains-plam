@@ -15,10 +15,10 @@ export default function VerticalBlindsPage() {
         "Vertical blinds consist of individual fabric louvers hanging vertically from an aluminum track. The louvers rotate 180 degrees to precisely angle incoming daylight, and traverse smoothly side-to-side to open up entire glass doors.",
         "Custom tailored in anti-static, dust-repellent fabrics, our vertical blinds provide modern light management for tall living room patio doors, balcony entrances, and commercial office towers across Dubai.",
       ]}
-      images={["/card-commercial-office.jpg", "/card-roller-blinds.jpg"]}
+      images={["/card-motorised-blinds-panel.jpg", "/card-zebra-blinds.jpg"]}
       imageAltText={[
-        "Sleek vertical blinds on floor-to-ceiling glass in Dubai villa",
-        "Modern white vertical blinds on balcony sliding doors",
+        "Modern Floor-to-Ceiling Louver Blinds with Smart Wall Panel Control in Dubai Penthouse",
+        "Contemporary Precision Tilting Louver Blinds in Palm Jebel Ali Luxury Villa",
       ]}
       whyNeedHeading="Why You Need Vertical Blinds in Dubai"
       whyNeedPoints={[
