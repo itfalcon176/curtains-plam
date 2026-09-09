@@ -337,7 +337,7 @@ export default function Home() {
 
             <div className="relative h-80 sm:h-96 rounded-3xl overflow-hidden border border-[#E6DFD5] shadow-xl">
               <Image
-                src="/blinds-motorized-palm-jebel-ali.jpg"
+                src="/card-motorised-blinds-remote.jpg"
                 alt="Palm Jebel Ali Motorized Curtains and Blinds"
                 fill
                 className="object-cover object-center"

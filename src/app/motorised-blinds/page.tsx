@@ -15,10 +15,10 @@ export default function MotorisedBlindsPage() {
         "Motorised blinds feature integrated ultra-quiet electric motors tucked inside the blind casing, allowing you to raise, lower, or tilt your shades at the push of a button, via smartphone app, or through voice commands.",
         "Equipped with Somfy, Tuya, and Zigbee wireless motors, our automated blinds seamlessly integrate into Apple HomeKit, Amazon Alexa, and Control4 smart home systems across Dubai’s finest residences.",
       ]}
-      images={["/card-motorised-blinds.jpg", "/blinds-motorized-palm-jebel-ali.jpg"]}
+      images={["/card-motorised-blinds-remote.jpg", "/card-motorised-blinds-panel.jpg"]}
       imageAltText={[
-        "Motorised smart blinds in modern Dubai luxury residence",
-        "Somfy automated roller blinds controlled via remote in villa",
+        "Somfy Motorized Roller Blinds with Smart Handheld Remote in Palm Jebel Ali Villa",
+        "Smart Home Touch Panel Controlling Motorized Blinds in Dubai Penthouse",
       ]}
       whyNeedHeading="Why You Need Motorised Blinds in Dubai"
       whyNeedPoints={[

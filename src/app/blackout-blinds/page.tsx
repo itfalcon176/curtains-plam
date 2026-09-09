@@ -15,10 +15,10 @@ export default function BlackoutBlindsPage() {
         "Blackout blinds are heavy-duty, light-tight window treatments designed with dense opaque fabrics and thermally coated linings that prevent 100% of external sunlight and artificial street glare from penetrating your room.",
         "Ideal for Dubai’s intense sunny climate, our custom blackout blinds feature side retention channels and cassette headboxes to eliminate light gaps along window edges, guaranteeing a pitch-black sleeping environment day or night.",
       ]}
-      images={["/card-blackout-curtains.jpg", "/card-roller-blinds.jpg"]}
+      images={["/card-blackout-blinds-bedroom.jpg", "/card-blackout-blinds-cassette.jpg"]}
       imageAltText={[
-        "100% blackout roller blinds installed in Dubai luxury bedroom",
-        "Custom blackout window shades with total light blockage",
+        "100% Blackout Roller Blinds in Luxury Dubai Master Bedroom",
+        "Motorized Blackout Roller Blind with Light-Locking Cassette and Side Tracks",
       ]}
       whyNeedHeading="Why You Need Blackout Blinds in Dubai"
       whyNeedPoints={[

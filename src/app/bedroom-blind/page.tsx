@@ -15,10 +15,10 @@ export default function BedroomBlindPage() {
         "Bedroom blinds are purpose-engineered window treatments designed to prioritize total sleep quality, sound insulation, and thermal comfort in private master suites and guest rooms.",
         "Custom tailored in multi-layer blackout fabrics with cassette side tracks, our bedroom blinds block out 100% of Dubai's morning sun and city light pollution, ensuring uninterrupted rest.",
       ]}
-      images={["/card-blackout-curtains.jpg", "/card-roller-blinds.jpg"]}
+      images={["/card-blackout-blinds-bedroom.jpg", "/card-blackout-blinds-cassette.jpg"]}
       imageAltText={[
-        "Luxury master bedroom blackout blinds in Palm Jebel Ali villa",
-        "Automated bedroom window shades in Dubai residence",
+        "Luxury Master Bedroom 100% Blackout Blinds in Dubai Residence",
+        "Motorized Bedroom Window Shades with Light-Blocking Side Channels",
       ]}
       whyNeedHeading="Why You Need Custom Bedroom Blinds in Dubai"
       whyNeedPoints={[

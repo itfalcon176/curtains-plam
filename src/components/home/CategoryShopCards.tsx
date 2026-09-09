@@ -94,8 +94,8 @@ export const categoryCardsData: CategoryCardItem[] = [
     badge: "Smart Somfy & Alexa",
     discount: "Up to 25% Off",
     desc: "Whisper-quiet motorized tracks and rechargeable battery systems. Controlled by remote, smartphone, or Alexa voice.",
-    image: "/blinds-motorized-palm-jebel-ali.jpg",
-    href: "/motorised-curtains",
+    image: "/card-motorised-blinds-remote.jpg",
+    href: "/motorised-blinds",
     tagline: "Somfy Certified • Smart Home",
   },
   {

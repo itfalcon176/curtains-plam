@@ -15,10 +15,10 @@ export default function RollerBlindsPage() {
         "Roller blinds are sleek, minimalist window coverings featuring a single piece of premium fabric wrapped neatly around a top casing or aluminum tube. When raised, they roll up tightly to reveal panoramic window views with clean aesthetic simplicity.",
         "Engineered with anti-fray woven textiles, UV-blocking solar screens, and total blackout backings, our custom roller blinds provide precise daylight control for bedrooms, living rooms, and office towers across Dubai.",
       ]}
-      images={["/card-roller-blinds.jpg", "/blinds-motorized-palm-jebel-ali.jpg"]}
+      images={["/card-roller-blinds.jpg", "/card-motorised-blinds-remote.jpg"]}
       imageAltText={[
         "Modern luxury villa roller blinds in Palm Jebel Ali Dubai",
-        "Sleek motorized roller shades installed in living room",
+        "Somfy motorized automated roller shades with remote in living room",
       ]}
       whyNeedHeading="Why You Need Custom Roller Blinds in Dubai"
       whyNeedPoints={[
