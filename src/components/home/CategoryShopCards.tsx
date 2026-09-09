@@ -36,7 +36,7 @@ export const categoryCardsData: CategoryCardItem[] = [
     desc: "Handcrafted wave pleats and ripplefold drapes tailored from 1,000+ luxury European fabrics with express 48-hour fitting.",
     image: "/card-wave-curtains.jpg",
     href: "/curtains",
-    tagline: "Wave Pleats • Triple Pinch • Eyelets",
+    tagline: "Wave Pleats • Pinch Pleat • Eyelets",
   },
   {
     id: "blinds",

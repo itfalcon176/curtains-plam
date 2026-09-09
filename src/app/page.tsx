@@ -84,7 +84,7 @@ export default function Home() {
     {
       community: "Palm Jebel Ali • Crescent",
       title: "Luxury Penthouse Suite Acoustic Drapes",
-      details: "Handcrafted triple pinch pleat velvet curtains with ceiling-recessed motorized tracks.",
+      details: "Handcrafted pinch pleat velvet curtains with ceiling-recessed motorized tracks.",
       tag: "Turnkey Installation",
     },
   ];

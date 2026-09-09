@@ -8,10 +8,10 @@ export default function DoublePleatCurtainsPage() {
     <SubMenuPageTemplate
       title="Double Pleat Curtains"
       subtitle="Refined Balance of Elegant Tailoring & Slim Stacking Width"
-      description="Double Pinch Pleat (Dutch Pleat) curtains feature groups of two stitched folds along the header, offering a refined, tailored look that uses slightly less fabric stack than triple pleats—perfect for modern Dubai spaces."
+      description="Double Pinch Pleat (Dutch Pleat) curtains feature groups of two stitched folds along the header, offering a refined, tailored look that uses slightly less fabric stack—perfect for modern Dubai spaces."
       whatIsHeading="What are Double Pleat Curtains?"
       whatIsText={[
-        "Double Pleat Curtains feature paired fabric folds hand-stitched at the header at precise intervals. Offering a slightly cleaner and less bulky top header than triple pinch pleats, double pleats strike the ideal balance between traditional tailoring and contemporary simplicity.",
+        "Double Pleat Curtains feature paired fabric folds hand-stitched at the header at precise intervals. Offering a slightly cleaner and less bulky top header than traditional deep pleats, double pleats strike the ideal balance between classic tailoring and contemporary simplicity.",
         "When pulled open, double pleat curtains compress into a narrower side stack, allowing more window glass and natural light to be uncovered in compact rooms or balcony doorways.",
       ]}
       images={["/card-double-pleat-track.jpg", "/card-double-pleat-pole.jpg"]}

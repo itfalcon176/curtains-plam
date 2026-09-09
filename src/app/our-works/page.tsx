@@ -54,7 +54,7 @@ export default function OurWorksPage() {
       location: "Dubai Hills Estate",
       image: "/card-blackout-curtains.jpg",
       category: "curtains",
-      treatment: "Triple Pinch Pleat Belgian Linen & Acoustic Blackouts",
+      treatment: "Pinch Pleat Belgian Linen & Acoustic Blackouts",
       tag: "Custom Tailoring",
       highlights: "6-meter drop double height living room with motorized heavy duty track.",
     },

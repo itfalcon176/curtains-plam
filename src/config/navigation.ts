@@ -246,7 +246,7 @@ export const navigationConfig: NavigationConfig = {
                     id: "pinch-pleat-curtains",
                     title: "Pinch Pleat Curtains",
                     href: "/pinch-pleat-curtains",
-                    description: "Classic luxury tailoring with triple pleats.",
+                    description: "Classic luxury tailoring with structured pleats.",
                     iconName: "ListFilter",
                   },
                   {
@@ -337,9 +337,9 @@ export const navigationConfig: NavigationConfig = {
                   },
                   {
                     id: "pinch-pleat-curtains",
-                    title: "Triple Pinch Pleat Curtains",
+                    title: "Pinch Pleat Curtains",
                     href: "/pinch-pleat-curtains",
-                    description: "Classic luxury tailoring with crisp gathered triple pleats.",
+                    description: "Classic luxury tailoring with crisp gathered pleats.",
                     iconName: "ListFilter",
                   },
                   {

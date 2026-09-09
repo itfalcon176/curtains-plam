@@ -14,8 +14,8 @@ export default function ChildrensCurtainsPage() {
         "Children's Curtains are fun, colorful, and highly functional window treatments designed specifically for kids' bedrooms, nurseries, and playrooms. Crafted with non-toxic, anti-dust-mite organic cottons and soft velvets, they create a healthy indoor sleeping environment.",
         "Equipped with thick thermal blackout linings, our children's drapes block out 100% of daytime UAE sunlight, ensuring your toddlers and children enjoy deep, uninterrupted nap times and restful nights.",
       ]}
-      images={["/card-blackout-curtains.jpg", "/card-sheer-curtains.jpg"]}
-      imageAltText={["Kids Nursery Blackout Curtains", "Playroom Sheer Drapes"]}
+      images={["/card-childrens-curtains-green.jpg", "/card-childrens-curtains-rainbow.jpg"]}
+      imageAltText={["Kids Playful Green Patterned Curtains", "Children's Rainbow Blackout Curtains"]}
       whyNeedHeading="Why You Need Children's Curtains in Dubai"
       whyNeedPoints={[
         "100% Daytime Blackout Protection: Blocks midday sun so babies and young children can nap comfortably during the day.",

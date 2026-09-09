@@ -14,8 +14,8 @@ export default function PanelCurtainsPage() {
         "Panel Curtains (Japanese Sliding Panels) consist of wide, flat fabric panels suspended from a multi-track aluminum channel system. When operated, the panels glide smoothly past one another, stacking neatly behind each other when open.",
         "Ideal for floor-to-ceiling glass sliding doors, wide balcony entrances, and flexible open-plan room dividers, panel curtains offer a clean, architectural alternative to traditional draped fabric.",
       ]}
-      images={["/card-sheer-curtains.jpg", "/card-commercial-office.jpg"]}
-      imageAltText={["Sliding Panel Curtains", "Patio Door Panel System"]}
+      images={["/card-panel-curtains-damask.jpg", "/card-panel-curtains-floral.jpg"]}
+      imageAltText={["Classic Damask Patterned Panel Curtain", "Blue Botanical Printed Panel Curtain"]}
       whyNeedHeading="Why You Need Panel Curtains in Dubai"
       whyNeedPoints={[
         "Perfect for Wide Glazing: Glides effortlessly across expansive 6-meter villa patio sliding doors and balcony glass.",
