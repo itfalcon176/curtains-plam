@@ -15,7 +15,7 @@ export default function VenetianBlindsPage() {
         "Venetian blinds are classic horizontal slat window coverings connected by cord tapes or ladder braids. By tilting the slats, you can direct sunlight upwards toward the ceiling or downwards to cut room glare.",
         "Available in authentic basswood, moisture-proof faux wood, and ultra-sleek anodized aluminum, our Venetian blinds offer versatile tilt management and clean architectural lines for any Dubai room.",
       ]}
-      images={["/card-wooden-blinds.jpg", "/blinds-wooden-palm-jebel-ali.jpg"]}
+      images={["/card-wooden-blinds.jpg", "/card-aluminium-venetian-detail.jpg"]}
       imageAltText={[
         "Custom wooden Venetian blinds in Palm Jebel Ali villa",
         "Sleek aluminum horizontal Venetian blinds in modern office",
