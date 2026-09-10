@@ -670,7 +670,7 @@ export const navigationConfig: NavigationConfig = {
                   {
                     id: "balcony-patio-blinds",
                     title: "Balcony & Sunroom Blinds",
-                    href: "/blinds",
+                    href: "/balcony-sunroom-blinds",
                     description: "Heavy-duty outdoor zip-screens and heat reflective solar fabrics.",
                     iconName: "Sun",
                   },
