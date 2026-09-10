@@ -15,10 +15,10 @@ export default function AluminiumVenetianBlindsPage() {
         "Aluminium Venetian blinds feature spring-tempered, high-grade aluminum horizontal slats finished with baked-on enamel or anodized metallic powder coats.",
         "Completely waterproof, rust-proof, and lightweight, our aluminum blinds are the ultimate practical choice for high-humidity environments like luxury kitchens, spa bathrooms, and commercial work suites in Dubai.",
       ]}
-      images={["/card-commercial-office.jpg", "/card-roller-blinds.jpg"]}
+      images={["/card-kitchen-blinds-sink.jpg", "/card-motorised-blinds-panel.jpg"]}
       imageAltText={[
-        "Sleek metallic aluminum Venetian blinds in modern kitchen",
-        "Waterproof aluminum window slats in Dubai office suite",
+        "Waterproof Metallic Slat Venetian Blinds in Modern Kitchen Sink Area",
+        "Precision Slatted Blinds with Smart Tilt Control in Dubai Villa",
       ]}
       whyNeedHeading="Why You Need Aluminium Venetian Blinds in Dubai"
       whyNeedPoints={[

@@ -15,10 +15,10 @@ export default function KitchenBlindsPage() {
         "Kitchen blinds are specialized window treatments manufactured with waterproof PVC, treated faux wood, or anodized aluminum slats engineered to handle cooking heat, steam, and splatter.",
         "Unlike standard fabric drapes that absorb food odors and oil, our custom kitchen blinds wipe clean effortlessly, maintaining a pristine, hygienic kitchen atmosphere across Dubai homes.",
       ]}
-      images={["/card-roller-blinds.jpg", "/card-wooden-blinds.jpg"]}
+      images={["/card-kitchen-blinds-sink.jpg", "/card-roller-blinds.jpg"]}
       imageAltText={[
-        "Waterproof wipeable roller blinds in modern Dubai villa kitchen",
-        "Moisture resistant aluminum Venetian blinds over kitchen sink",
+        "Waterproof Fauxwood Venetian Blinds over Marble Countertop and Kitchen Sink in Dubai Villa",
+        "Wipeable Moisture-Resistant Roller Blinds in Modern Open-Plan Luxury Kitchen",
       ]}
       whyNeedHeading="Why You Need Kitchen Blinds in Dubai"
       whyNeedPoints={[
