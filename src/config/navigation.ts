@@ -677,7 +677,7 @@ export const navigationConfig: NavigationConfig = {
                   {
                     id: "office-workspaces",
                     title: "Office & Study Blinds",
-                    href: "/office-blinds-and-curtains",
+                    href: "/office-study-blinds",
                     description: "Anti-glare screen fabrics designed to eliminate computer screen reflections.",
                     iconName: "Laptop",
                   },
