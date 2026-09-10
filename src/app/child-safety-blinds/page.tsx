@@ -16,12 +16,12 @@ export default function ChildSafetyBlindsPage() {
         "Fully compliant with international child safety standards (BS EN 13120 and ANSI/WCMA), our cordless systems are available across roller shades, Roman blinds, wooden venetian slats, and blackout honeycomb cellular blinds.",
       ]}
       images={[
-        "/card-childrens-curtains-rainbow.jpg",
-        "/card-motorised-blinds-remote.jpg",
+        "/card-child-safe-nursery.jpg",
+        "/card-child-safe-bedroom.jpg",
       ]}
       imageAltText={[
-        "Certified child-safe cordless blinds in modern children's nursery in Dubai villa",
-        "Somfy automated cordless motorized blinds with remote in family residence",
+        "Mother effortlessly operating certified child-safe cordless soft-lift blind in baby nursery",
+        "Safe cordless wooden venetian and blackout blinds with zero dangling cords in kids bedroom",
       ]}
       whyNeedHeading="Why You Need Child-Safe Cordless Systems in Dubai"
       whyNeedPoints={[

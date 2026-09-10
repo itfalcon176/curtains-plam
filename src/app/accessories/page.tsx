@@ -15,12 +15,12 @@ export default function AccessoriesPage() {
         "Available in curved, square, and flush-mounted profiles in powder-coated white, anodized silver, matte black, champagne bronze, or matching fabric wrap inserts, cassettes eliminate light leakage at the top of windows.",
       ]}
       images={[
-        "/card-poles-motorized-tracks.jpg",
-        "/card-roller-blinds.jpg",
+        "/card-blinds-cassette-detail.jpg",
+        "/card-blinds-accessories-pelmet.jpg",
       ]}
       imageAltText={[
-        "Modern Concealed Cassette Roller Blinds Track System in Dubai Home",
-        "Designer Roller Blinds with Matching Enclosed Cassette Top Bar",
+        "Modern Enclosed Aluminum Top Cassette Fascia for Roller Blinds with Bottom Weight Bar",
+        "Luxury Fabric-Wrapped Pelmet Fascia with Precision Bottom Rail and Cordless Control Wand",
       ]}
       whyNeedHeading="Why Add Premium Accessories & Cassettes?"
       whyNeedPoints={[

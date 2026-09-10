@@ -15,10 +15,10 @@ export default function KidsRoomBlindsPage() {
         "Kids' room blinds are specially designed window coverings that combine strict child safety standards with fun aesthetics, durable wipe-clean fabrics, and dependable daylight blocking for afternoon naps.",
         "Equipped with zero-cord mechanisms, our nursery and children's blinds ensure complete safety for toddlers while providing thermal insulation against Dubai's desert sun.",
       ]}
-      images={["/card-school-blinds.jpg", "/card-roller-blinds.jpg"]}
+      images={["/card-child-safe-nursery.jpg", "/card-child-safe-bedroom.jpg"]}
       imageAltText={[
-        "Child-safe cordless blackout blinds in Dubai kids bedroom",
-        "Cheerful durable nursery window shades in Palm Jebel Ali villa",
+        "Certified child-safe cordless blackout blinds in Dubai luxury nursery",
+        "Safe cordless wooden blinds and blackout shades in cheerful kids bedroom in Palm Jebel Ali villa",
       ]}
       whyNeedHeading="Why You Need Specialized Kids' Room Blinds in Dubai"
       whyNeedPoints={[
