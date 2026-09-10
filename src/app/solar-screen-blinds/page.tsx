@@ -15,10 +15,10 @@ export default function SolarScreenBlindsPage() {
         "Solar Screen Blinds (Sunscreen Roller Shades) are high-tech architectural window coverings woven from fiberglass and PVC-coated polyester mesh yarns. Engineered with calibrated openness factors (1%, 3%, 5%, and 10%), they filter harsh desert ultraviolet rays while allowing natural filtered daylight and one-way daytime outward visibility.",
         "Unlike opaque blackout fabrics that shut out the outside world, solar screen blinds let you enjoy breathtaking views of the Arabian Gulf, Palm Jebel Ali coastline, and Dubai skyline throughout the brightest hours of the day while keeping interiors noticeably cooler and comfortable.",
       ]}
-      images={["/card-commercial-office.jpg", "/card-roller-blinds.jpg"]}
+      images={["/card-solar-screen-villa.jpg", "/card-solar-screen-office.jpg"]}
       imageAltText={[
-        "High-performance solar screen blinds in Dubai executive office blocking sun glare while maintaining city skyline view",
-        "Contemporary solar sunscreen roller blinds in luxury Dubai villa living and kitchen area",
+        "Custom Solar Screen Blinds in Dubai Luxury Villa Filtering Heat while Preserving Panoramic Sea View",
+        "High-Performance Sunscreen Roller Shades in Executive Office Eliminating Screen Glare and Preserving Skyline View",
       ]}
       whyNeedHeading="Why You Need Solar Screen Blinds in Dubai"
       whyNeedPoints={[
