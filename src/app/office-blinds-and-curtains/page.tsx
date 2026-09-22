@@ -33,14 +33,14 @@ export default function CommercialPage() {
     },
     {
       title: "Medical & Healthcare Blinds",
-      image: "/card-blackout-curtains.jpg",
-      href: "/office-blinds-and-curtains",
+      image: "/card-medical-curtains.jpg",
+      href: "/hospital-blinds-curtains",
       desc: "Antimicrobial, flame-retardant, hygiene-certified cubicle tracks and wipeable window blinds built for DHA-compliant hospitals and clinics in Dubai.",
     },
     {
       title: "Schools & Educational Blinds",
-      image: "/card-roller-blinds.jpg",
-      href: "/office-blinds-and-curtains",
+      image: "/card-school-blinds.jpg",
+      href: "/school-blinds-curtains",
       desc: "Child-safe, heavy-duty cordless blackout roller blinds and auditorium acoustic drapery engineered for intense daily school use in Dubai.",
     },
     {
