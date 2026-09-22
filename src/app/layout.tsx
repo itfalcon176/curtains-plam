@@ -22,7 +22,11 @@ const baskervville = Baskervville({
 export const metadata: Metadata = {
   title: "Easy Blinds and Curtains Dubai | Bespoke Luxury Curtains & Smart Blinds",
   description:
-    "Dubai’s premier custom-made curtains, blackout drapery, motorized blinds, and smart Somfy window treatments. Complimentary 24-hour in-home measurement, design consultation, and fast installation across UAE.",
+    "Dubai's premier custom-made curtains, blackout drapery, motorized blinds, and smart Somfy window treatments. Complimentary 24-hour in-home measurement, design consultation, and fast installation across UAE.",
+  icons: {
+    icon: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
