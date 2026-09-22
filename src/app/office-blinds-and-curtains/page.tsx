@@ -51,7 +51,7 @@ export default function CommercialPage() {
     },
     {
       title: "Gyms & Wellness Acoustic Curtains",
-      image: "/blinds-motorized-palm-jebel-ali.jpg",
+      image: "/card-gym-roller-blinds.jpg",
       href: "/office-blinds-and-curtains",
       desc: "Moisture-resistant wipeable blinds and heavy sound-dampening partition curtains for commercial gyms, fitness clubs, and luxury spa resorts.",
     },
