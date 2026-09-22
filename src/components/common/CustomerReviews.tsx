@@ -108,7 +108,7 @@ export const CustomerReviews: React.FC = () => {
   };
 
   return (
-    <section className="py-16 sm:py-20 bg-[#FAF8F5] select-none border-t border-[#E6DFD5]">
+    <section className="py-16 sm:py-20 bg-[#FAF8F5] border-t border-[#E6DFD5]">
       <div className="max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4 border-b border-[#E6DFD5] pb-6">

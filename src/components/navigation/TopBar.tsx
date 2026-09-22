@@ -12,7 +12,7 @@ interface TopBarProps {
 
 export const TopBar: React.FC<TopBarProps> = ({ config, onOpenBooking }) => {
   return (
-    <div className="bg-[#141517] text-[#D8D4CE] border-b border-[#252629] text-[11px] font-medium tracking-wide select-none">
+    <div className="bg-[#141517] text-[#D8D4CE] border-b border-[#252629] text-[11px] font-medium tracking-wide">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="h-9 flex items-center justify-between gap-4">
           {/* Left: Direct Contact & Location */}

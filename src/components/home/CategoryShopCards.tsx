@@ -115,7 +115,7 @@ export const CategoryShopCards: React.FC = () => {
 
   return (
     <>
-      <section className="py-20 lg:py-28 bg-[#FAF8F5] select-none border-b border-[#E6DFD5]">
+      <section className="py-20 lg:py-28 bg-[#FAF8F5] border-b border-[#E6DFD5]">
         <div className="max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
           {/* Section Header */}
           <div className="text-center max-w-4xl mx-auto mb-14 sm:mb-18 space-y-4">

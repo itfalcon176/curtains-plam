@@ -77,7 +77,7 @@ export default function CommercialPage() {
   ];
 
   return (
-    <div className="bg-[#FAF8F5] select-none text-stone-900">
+    <div className="bg-[#FAF8F5] text-stone-900">
       {/* 1. Minimal Elegant Hero Title & Intro Section */}
       <section className="pt-24 sm:pt-28 pb-12 sm:pb-16 text-center max-w-4xl mx-auto px-4 sm:px-6">
         {/* Breadcrumbs */}

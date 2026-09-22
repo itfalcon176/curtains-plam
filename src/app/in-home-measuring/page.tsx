@@ -23,7 +23,7 @@ export default function InHomeMeasuringPage() {
   const benefits = [
     {
       title: "1,000+ Fabric Swatches at Your Doorstep",
-      image: "/card-measuring-mobile-van.jpg",
+      image: "/van.png",
       href: "/book-a-free-appointment",
       desc: "Our mobile design van brings luxurious velvets, pure linens, organic cottons, blackout linings, and sheer voiles directly to your living room.",
     },
@@ -79,7 +79,7 @@ export default function InHomeMeasuringPage() {
   ];
 
   return (
-    <div className="bg-[#FAF8F5] select-none text-stone-900">
+    <div className="bg-[#FAF8F5] text-stone-900">
       {/* 1. Page Hero */}
       <PageHero
         title="Complimentary In-Home Laser Measuring"

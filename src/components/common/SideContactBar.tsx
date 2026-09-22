@@ -33,7 +33,7 @@ export const SideContactBar: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 50 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
-            className="fixed right-0 top-1/2 -translate-y-1/2 z-45 flex flex-col items-stretch bg-white border-l border-t border-b border-[#E0D9CE] rounded-l-xl shadow-2xl overflow-hidden select-none"
+            className="fixed right-0 top-1/2 -translate-y-1/2 z-45 flex flex-col items-stretch bg-white border-l border-t border-b border-[#E0D9CE] rounded-l-xl shadow-2xl overflow-hidden"
           >
             {/* 1. WhatsApp Button (Official WhatsApp Icon) */}
             <a

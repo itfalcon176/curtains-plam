@@ -62,7 +62,7 @@ export const PalmJebelAliCurtainsOverview: React.FC = () => {
 
   return (
     <>
-      <section className="relative py-20 lg:py-28 bg-[#FAF8F5] select-none border-b border-[#E6DFD5] overflow-hidden">
+      <section className="relative py-20 lg:py-28 bg-[#FAF8F5] border-b border-[#E6DFD5] overflow-hidden">
         {/* Subtle Ambient Radial Luxury Glow */}
         <div className="absolute top-0 left-0 w-96 h-96 bg-[#C5A880]/8 rounded-full blur-3xl pointer-events-none" />
 

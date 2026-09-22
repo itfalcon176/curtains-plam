@@ -40,7 +40,7 @@ export const NavDesktop: React.FC<NavDesktopProps> = ({
 
   return (
     <nav
-      className="hidden lg:flex items-center justify-center gap-0.5 xl:gap-1 2xl:gap-1.5 relative select-none"
+      className="hidden lg:flex items-center justify-center gap-0.5 xl:gap-1 2xl:gap-1.5 relative"
       onMouseLeave={handleMouseLeave}
     >
       {items.map((item) => {
@@ -57,7 +57,7 @@ export const NavDesktop: React.FC<NavDesktopProps> = ({
             <Link
               href={item.href}
               className={cn(
-                "relative z-10 flex items-center gap-1 px-2 xl:px-2.5 2xl:px-3 py-1.5 text-[12.5px] xl:text-[13px] 2xl:text-[13.5px] font-medium tracking-normal transition-colors duration-150 rounded-full select-none whitespace-nowrap",
+                "relative z-10 flex items-center gap-1 px-2 xl:px-2.5 2xl:px-3 py-1.5 text-[12.5px] xl:text-[13px] 2xl:text-[13.5px] font-medium tracking-normal transition-colors duration-150 rounded-full whitespace-nowrap",
                 isTransparent
                   ? isOpen || isPillHovered
                     ? "text-white font-semibold"

@@ -31,7 +31,7 @@ export const PageHero: React.FC<PageHeroProps> = ({
   const activeBreadcrumbs = breadcrumbs || [{ label: title }];
 
   return (
-    <section className="bg-[#FAF8F5] select-none text-stone-900 pt-24 sm:pt-28 pb-10 sm:pb-14 text-center max-w-4xl mx-auto px-4 sm:px-6">
+    <section className="bg-[#FAF8F5] text-stone-900 pt-24 sm:pt-28 pb-10 sm:pb-14 text-center max-w-4xl mx-auto px-4 sm:px-6">
       {/* Breadcrumbs */}
       <nav className="flex items-center justify-center gap-1.5 text-xs text-stone-500 mb-4 flex-wrap">
         <Link href="/" className="hover:text-[#9E7A4A] flex items-center gap-1 transition-colors">

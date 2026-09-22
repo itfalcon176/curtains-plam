@@ -94,7 +94,7 @@ export const AppointmentBookingSection: React.FC<AppointmentBookingSectionProps>
   };
 
   return (
-    <section className="relative w-full py-20 sm:py-28 bg-[#FAF8F5] select-none border-t border-[#E6DFD5] overflow-hidden">
+    <section className="relative w-full py-20 sm:py-28 bg-[#FAF8F5] border-t border-[#E6DFD5] overflow-hidden">
       {/* Subtle Luxury Ambient Background Glows */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[500px] h-[500px] bg-[#C5A880]/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 right-0 w-[450px] h-[450px] bg-[#25D366]/5 rounded-full blur-3xl pointer-events-none" />

@@ -12,7 +12,7 @@ export const HeroBanner: React.FC = () => {
 
   return (
     <>
-      <section className="relative w-full h-[100svh] min-h-[600px] max-h-[1050px] flex items-center overflow-hidden bg-stone-950 select-none pt-14 sm:pt-16">
+      <section className="relative w-full h-[100svh] min-h-[600px] max-h-[1050px] flex items-center overflow-hidden bg-stone-950 pt-14 sm:pt-16">
         {/* 1. Clear Aerial Island Background Image */}
         <div className="absolute inset-0 z-0">
           <Image

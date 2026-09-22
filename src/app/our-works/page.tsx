@@ -102,7 +102,7 @@ export default function OurWorksPage() {
     : projects.filter((p) => p.category === activeFilter);
 
   return (
-    <div className="bg-[#FAF8F5] select-none text-stone-900">
+    <div className="bg-[#FAF8F5] text-stone-900">
       {/* 1. Page Hero */}
       <PageHero
         title="Our Works & Villa Installations"
@@ -115,7 +115,7 @@ export default function OurWorksPage() {
       {/* 2. Portfolio Showcase & Filters */}
       <section className="py-12 sm:py-16 max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 border-t border-[#E6DFD5]">
         {/* Filters */}
-        <div className="flex items-center justify-center gap-2 sm:gap-4 mb-12 flex-wrap select-none">
+        <div className="flex items-center justify-center gap-2 sm:gap-4 mb-12 flex-wrap">
           {[
             { id: "all", label: "All Projects" },
             { id: "curtains", label: "Luxury Curtains" },

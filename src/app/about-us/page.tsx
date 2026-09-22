@@ -31,7 +31,7 @@ export default function AboutUsPage() {
     },
     {
       title: "Complimentary Mobile Design Van",
-      image: "/card-about-van.jpg",
+      image: "/van.png",
       href: "/book-a-free-appointment",
       desc: "Our fully equipped design van brings fabric swatches, timber blinds, and certified laser measuring technicians directly to your villa in Palm Jebel Ali.",
     },
@@ -88,7 +88,7 @@ export default function AboutUsPage() {
   ];
 
   return (
-    <div className="bg-[#FAF8F5] select-none text-stone-900">
+    <div className="bg-[#FAF8F5] text-stone-900">
       {/* SEO Canonical & Meta Information Header Structure */}
       <meta name="description" content="Learn about Easy Blinds and Curtains, Dubai's premier atelier for luxury drapery, motorized smart blinds, flooring, and bespoke furniture in Palm Jebel Ali & UAE." />
 

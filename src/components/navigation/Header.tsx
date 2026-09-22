@@ -60,7 +60,7 @@ export const Header: React.FC<HeaderProps> = ({
     <>
       <header
         className={cn(
-          "w-full fixed top-0 left-0 right-0 z-50 transition-all duration-300 select-none",
+          "w-full fixed top-0 left-0 right-0 z-50 transition-all duration-300",
           isVisible ? "translate-y-0" : "-translate-y-full",
           className
         )}

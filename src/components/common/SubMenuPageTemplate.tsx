@@ -70,7 +70,7 @@ export const SubMenuPageTemplate: React.FC<SubMenuPageTemplateProps> = ({
   ];
 
   return (
-    <div className="bg-[#FAF8F5] select-none text-stone-900">
+    <div className="bg-[#FAF8F5] text-stone-900">
       {/* 1. Page Hero with Breadcrumbs */}
       <PageHero
         title={title}

@@ -111,7 +111,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="bg-[#FAF8F5] select-none">
+    <div className="bg-[#FAF8F5]">
       {/* 1. Immersive Full-Screen Luxury Hero Banner (Fit Screen & Priority) */}
       <HeroBanner />
 
