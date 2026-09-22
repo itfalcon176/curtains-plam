@@ -23,37 +23,37 @@ export default function InHomeMeasuringPage() {
   const benefits = [
     {
       title: "1,000+ Fabric Swatches at Your Doorstep",
-      image: "/card-about-van.jpg",
+      image: "/card-measuring-mobile-van.jpg",
       href: "/book-a-free-appointment",
       desc: "Our mobile design van brings luxurious velvets, pure linens, organic cottons, blackout linings, and sheer voiles directly to your living room.",
     },
     {
       title: "Laser Precision Measurement",
-      image: "/card-about-craftsmanship.jpg",
+      image: "/card-measuring-laser-precision.jpg",
       href: "/book-a-free-appointment",
       desc: "Certified technicians use advanced laser distance meters to measure height, ceiling recesses, and wall clearances to exact millimeter accuracy.",
     },
     {
       title: "100% Guaranteed Perfect Fit",
-      image: "/blinds-motorized-palm-jebel-ali.jpg",
+      image: "/card-measuring-perfect-fit.jpg",
       href: "/book-a-free-appointment",
       desc: "We take full responsibility for all measurements. If anything does not fit with absolute perfection, we adjust or remake it completely free of charge.",
     },
     {
       title: "Instant On-Site Transparent Pricing",
-      image: "/card-fabric-swatches.jpg",
+      image: "/card-measuring-transparent-pricing.jpg",
       href: "/book-a-free-appointment",
       desc: "No hidden extras. You receive an itemized quote including fabrics, tracks, tailoring, motorization, steam ironing, and installation.",
     },
     {
       title: "Natural Daylight Fabric Matching",
-      image: "/curtains-wave-palm-jebel-ali.jpg",
+      image: "/card-measuring-daylight-matching.jpg",
       href: "/book-a-free-appointment",
       desc: "Compare fabric textures and colors against your actual furniture, flooring, and natural window daylight instead of artificial showroom lights.",
     },
     {
       title: "Certified Smart Motor Consultation",
-      image: "/card-commercial-office.jpg",
+      image: "/card-measuring-smart-motor.jpg",
       href: "/motorised-curtains",
       desc: "Test live Somfy, Tuya, and Zigbee motorized rails and consult on smart home hub integration for your home automation setup.",
     },

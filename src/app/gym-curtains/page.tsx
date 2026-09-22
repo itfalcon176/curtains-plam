@@ -15,7 +15,7 @@ export default function GymCurtainsPage() {
         "Gym and fitness centre curtains are high-performance window shades and space dividing drapes specifically designed to withstand humidity, sweat, frequent cleaning, and high sound levels typical of modern fitness spaces.",
         "Our specialized solar screen blinds block intense UAE sunlight and glare while preserving outdoor ocean views for gym-goers, creating an energized workout environment with reduced HVAC cooling load.",
       ]}
-      images={["/card-roller-blinds.jpg", "/card-motorised-blinds.jpg"]}
+      images={["/card-gym-roller-blinds.jpg", "/card-gym-acoustic-curtains.jpg"]}
       imageAltText={[
         "Modern fitness centre sunscreen roller blinds in Dubai",
         "Acoustic partition gym curtains in Palm Jebel Ali wellness resort",
