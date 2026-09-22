@@ -29,7 +29,7 @@ export default function InHomeMeasuringPage() {
     },
     {
       title: "Laser Precision Measurement",
-      image: "/card-measuring-laser-precision.jpg",
+      image: "/laser-prison.jpeg",
       href: "/book-a-free-appointment",
       desc: "Certified technicians use advanced laser distance meters to measure height, ceiling recesses, and wall clearances to exact millimeter accuracy.",
     },
